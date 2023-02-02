@@ -27,7 +27,7 @@ vim.cmd [[packadd packer.nvim]]
 require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use 'javi-7/nvim-osfa'
-    use 'javi-7/nvim-spaschemes'
+    use 'javi-7/nvim-nyctovim'
     use 'javi-7/nvim-hemingway'
     use 'javi-7/nvim-wildcat'
     use 'javi-7/nvim-executor'
@@ -49,7 +49,7 @@ require('packer').startup(function(use)
 )
 
 -- colorscheme
-vim.cmd [[colorscheme silence]]
+vim.cmd [[colorscheme silentium]]
 
 -- NvimTree
 vim.g.loaded = 1
