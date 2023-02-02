@@ -1,0 +1,74 @@
+" Options
+set adblocker=update
+set cache=full
+" set useragent=%firefox
+set downloadmethod=confirm
+set downloadpath=~/Descargas
+set devtoolsposition=vsplit
+set nativetheme=dark
+set startuppages=https://duckduckgo.com
+set downloadmethod=confirm
+set dialogalert=show
+set dialogconfirm=show
+set dialogprompt=show
+set guifontsize=12
+set mintabwidth=250
+set norestoretabs
+set permissioncamera=ask
+set permissioncertificateerror=ask
+set permissiondisplaycapture=ask
+set permissionmediadevices=allowfull
+set permissionmicrophone=ask
+set permissionpersistentstorage=allow
+set redirecttohttp
+set splitbelow
+set mapsuggestposition=bottomleft
+set vimcommand="alacritty -e nvim"
+
+" Search Words
+set searchwords=
+set searchwords+=gg~https://www.google.com/search?hl=en&q=%s
+set searchwords+=tr~https://translate.google.com/?sl=auto&tl=en&text=%s
+set searchwords+=wren~https://wordreference.com/es/translation.asp?tranword=%s
+set searchwords+=wres~https://wordreference.com/es/translation.asp?tranword=%s
+set searchwords+=wk~https://es.wikipedia.org/?search=%s
+set searchwords+=wken~https://en.wikipedia.org/?search=%s
+set searchwords+=yify~https://yts.mx/browse-movies/%s/all/all/0/latest/0/all
+set searchwords+=yt~https://www.youtube.com/results?search_query=%s
+set searchwords+=pdf~https://www.pdfdrive.com/search?q=%s
+
+" Bookmarks
+command afip  :open https://auth.afip.gob.ar/contribuyente_/login.xhtml<CR>
+command arch  :open https://archlinux.org/<CR>
+command aur   :open https://aur.archlinux.org/<CR>
+command bin   :open https://www.binance.com/es-AR<CR>
+command booka :open https://bookauthority.org/<CR>
+command bookd :open https://www.bookdepository.com/es/<CR>
+command can   :open https://www.canva.com/es_419/<CR>
+command code  :open https://codeberg.org/javi<CR>
+command mail  :open https://account.proton.me<CR>
+command pdf   :open https://www.pdfdrive.com<CR>
+command syn   :open https://cp.sync.com/<CR>
+command yify  :open https://yts.mx/browse-movies<CR>
+command yt    :open https://youtube.com<CR>
+
+colorscheme flipped
+
+" Mappings
+emap <C-i> <editWithVim>
+map <C-q> <:quit>
+map <A-1> <:b 0>
+map <A-2> <:b 1>
+map <A-3> <:b 2>
+map <A-4> <:b 3>
+map <A-5> <:b 4>
+map <A-6> <:b 5>
+map <A-7> <:b 6>
+map <A-8> <:b 7>
+map <A-9> <:b 8>
+map <C-t> <openNewTab><toExploreMode>
+map <C-s> <:screenshot>
+vmap <C-f> <p.searchText>
+nmap c <:close>
+
+" vim: ft=vim
