@@ -42,5 +42,5 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 # Prompt
-PROMPT="%F{240}╭─%{$reset_color%} %B%F{245}%n %~%{$reset_color%}%b %B%F{15}\$(git_branch)%{$reset_color%}%b
+PROMPT="%F{240}╭─%{$reset_color%} %B%F{245}%n %~%{$reset_color%}%b %F{15}\$(git_branch)%{$reset_color%}
 %F{240}╰─%{$reset_color%} "
