@@ -45,7 +45,7 @@ command bin   :open https://www.binance.com/es-AR<CR>
 command booka :open https://bookauthority.org/<CR>
 command bookd :open https://www.bookdepository.com/es/<CR>
 command can   :open https://www.canva.com/es_419/<CR>
-command code  :open https://codeberg.org/javi<CR>
+command git   :open https://github.com/javio7<CR>
 command mail  :open https://account.proton.me<CR>
 command pdf   :open https://www.pdfdrive.com<CR>
 command syn   :open https://cp.sync.com/<CR>
