@@ -11,9 +11,6 @@ require'lspconfig'.clangd.setup{}
 -- Rust
 require'lspconfig'.rust_analyzer.setup{}
 
--- Haskell
-require'lspconfig'.hls.setup{}
-
 -- Lua
 require'lspconfig'.sumneko_lua.setup {
     settings = {
