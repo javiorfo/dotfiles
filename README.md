@@ -1,4 +1,4 @@
-# Dotfiles
+# :file_cabinet: Dotfiles
 
 - [Alacritty](https://github.com/javio7/dotfiles/blob/master/.config/alacritty)
 - [Leftwm](https://github.com/javio7/dotfiles/blob/master/.config/leftwm)
