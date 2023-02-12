@@ -12,7 +12,7 @@ require'lspconfig'.clangd.setup{}
 require'lspconfig'.rust_analyzer.setup{}
 
 -- Lua
-require'lspconfig'.sumneko_lua.setup {
+require'lspconfig'.lua_ls.setup {
     settings = {
         Lua = {
             runtime = {
@@ -20,6 +20,9 @@ require'lspconfig'.sumneko_lua.setup {
             },
             diagnostics = {
                 globals = {'vim'}
+            },
+            telemetry = {
+                enable = false
             }
         }
     }
