@@ -10,6 +10,3 @@
 - [XMobar](https://github.com/charkuils/dotfiles/blob/master/.config/xmobar)
 - [XMonad](https://github.com/charkuils/dotfiles/blob/master/.config/xmonad)
 - [Zsh](https://github.com/charkuils/dotfiles/blob/master/.zshrc)
-
-### Support
-- [Paypal](https://www.paypal.com/donate/?hosted_button_id=DT5ZGHRJKYJ8C)
