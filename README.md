@@ -10,3 +10,6 @@
 - [XMobar](https://github.com/charkuils/dotfiles/blob/master/.config/xmobar)
 - [XMonad](https://github.com/charkuils/dotfiles/blob/master/.config/xmonad)
 - [Zsh](https://github.com/charkuils/dotfiles/blob/master/.zshrc)
+
+### Support
+- [Binance](https://www.binance.com/en/my/wallet/account/payment/send): `Pay ID: 546639204`
