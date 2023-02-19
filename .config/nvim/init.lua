@@ -41,8 +41,6 @@ require('packer').startup(function(use)
     use 'hrsh7th/nvim-cmp'
     use 'mfussenegger/nvim-dap'
     use 'mfussenegger/nvim-jdtls'
-    use 'L3MON4D3/LuaSnip'
-    use 'saadparwaiz1/cmp_luasnip'
     use 'nvim-lualine/lualine.nvim'
   end
 )
