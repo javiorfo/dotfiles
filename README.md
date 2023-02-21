@@ -10,3 +10,6 @@
 - [XMobar](https://github.com/javiorfo/dotfiles/blob/master/.config/xmobar)
 - [XMonad](https://github.com/javiorfo/dotfiles/blob/master/.config/xmonad)
 - [Zsh](https://github.com/javiorfo/dotfiles/blob/master/.zshrc)
+
+### Support
+- [Paypal](https://www.paypal.com/donate/?hosted_button_id=9BFAD3RVEZNQ2)
