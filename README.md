@@ -9,6 +9,7 @@
 - [Vieb](https://github.com/javiorfo/dotfiles/blob/master/.config/Vieb)
 - [XMobar](https://github.com/javiorfo/dotfiles/blob/master/.config/xmobar)
 - [XMonad](https://github.com/javiorfo/dotfiles/blob/master/.config/xmonad)
+- [Zathura](https://github.com/javiorfo/dotfiles/blob/master/.config/zathura/zathurarc)
 - [Zsh](https://github.com/javiorfo/dotfiles/blob/master/.zshrc)
 
 ### Support
