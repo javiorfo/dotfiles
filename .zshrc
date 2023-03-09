@@ -38,7 +38,8 @@ autoload -U compinit; compinit
 bindkey -v
 
 # Alias
-alias ls='ls --color=auto'
+# alias ls='ls --color=auto'
+alias ls='exa --icons --color never'
 alias grep='grep --color=auto'
 
 # Prompt
