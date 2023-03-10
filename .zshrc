@@ -42,7 +42,7 @@ bindkey -v
 
 # Alias
 # alias ls='ls --color=auto'
-alias ls='exa --icons'
+alias ls='exa --icons --group-directories-first'
 alias grep='grep --color=auto'
 
 # Prompt
