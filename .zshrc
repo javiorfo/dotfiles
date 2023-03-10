@@ -17,6 +17,9 @@ export SAVEHIST=10000
 export KEYTIMEOUT=1
 setopt HIST_SAVE_NO_DUPS
 
+# EXA
+export EXA_COLORS="di=1;38;5;242:fi=38;5;250:ex=38;5;228:ln=1;38;5;245"
+
 # Git
 function git_branch(){                                                                                                 
     ref=$(git symbolic-ref --short --quiet HEAD 2>/dev/null)
@@ -39,7 +42,7 @@ bindkey -v
 
 # Alias
 # alias ls='ls --color=auto'
-alias ls='exa --icons --color never'
+alias ls='exa --icons'
 alias grep='grep --color=auto'
 
 # Prompt
