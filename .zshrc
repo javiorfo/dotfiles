@@ -18,7 +18,7 @@ export KEYTIMEOUT=1
 setopt HIST_SAVE_NO_DUPS
 
 # EXA
-export EXA_COLORS="di=1;38;5;242:fi=38;5;250:ex=38;5;228:ln=1;38;5;245"
+export EXA_COLORS="di=1;38;5;242:fi=38;5;250:*.pdf=38;5;250:ex=38;5;228:ln=1;38;5;245"
 
 # Git
 function git_branch(){                                                                                                 
