@@ -5,9 +5,6 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 
--- C
-require'lspconfig'.clangd.setup{}
-
 -- Rust
 require'lspconfig'.rust_analyzer.setup{}
 
