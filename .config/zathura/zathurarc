@@ -1,1 +1,6 @@
+set recolor
+set recolor-lightcolor '#080808'
+set sandbox none
+set selection-clipboard clipboard
 
+" vim: ft=vim
