@@ -38,5 +38,9 @@ vim.api.nvim_set_keymap('n', '<leader>co', '<Plug>HemingwayComment', opts)
 vim.api.nvim_set_keymap('v', '<leader>co', '<Plug>HemingwayMultiComment', opts)
 
 -- NvimTree
-vim.api.nvim_set_keymap('n', '<C-g>', '<cmd>NvimTreeFindFile<CR>', opts)
+vim.api.nvim_set_keymap('n', '<C-g>', '<cmd>NvimTreeFindFile | NvimTreeFocus<CR>', opts)
 vim.api.nvim_set_keymap('n', '<C-c>', '<cmd>NvimTreeClose<CR>', opts)
+
+-- Fuel
+vim.api.nvim_set_keymap('n', '<leader>ji', '<Plug>Fuel', opts)
+vim.api.nvim_set_keymap('n', '<leader>jc', '<Plug>FuelStop', opts)
