@@ -1,6 +1,7 @@
 # :file_cabinet: Dotfiles
 
 - [Alacritty](https://github.com/javiorfo/dotfiles/blob/master/.config/alacritty)
+- [Joshuto](https://github.com/javiorfo/dotfiles/blob/master/.config/joshuto)
 - [Leftwm](https://github.com/javiorfo/dotfiles/blob/master/.config/leftwm)
 - [Mutt](https://github.com/javiorfo/dotfiles/blob/master/.mutt)
 - [Neovim](https://github.com/javiorfo/dotfiles/blob/master/.config/nvim)
