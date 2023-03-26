@@ -12,6 +12,3 @@
 - [XMonad](https://github.com/systemmalt/dotfiles/blob/master/.config/xmonad)
 - [Zathura](https://github.com/systemmalt/dotfiles/blob/master/.config/zathura/zathurarc)
 - [Zsh](https://github.com/systemmalt/dotfiles/blob/master/.zshrc)
-
-### Support
-- [Paypal](https://www.paypal.com/donate/?hosted_button_id=9BFAD3RVEZNQ2)
