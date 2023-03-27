@@ -1,4 +1,4 @@
-# :file_cabinet: Dotfiles
+# Dotfiles
 
 - [Alacritty](https://github.com/systemmalt/dotfiles/blob/master/.config/alacritty)
 - [Joshuto](https://github.com/systemmalt/dotfiles/blob/master/.config/joshuto)
