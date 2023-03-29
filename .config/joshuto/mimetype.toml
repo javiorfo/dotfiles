@@ -4,11 +4,11 @@ audio_default	= [
 ]
 
 image_default	= [
-    { command = "feh", silent = true },
+    { command = "sxiv", args = [ "-b" ], silent = true },
 ]
 
 video_default	= [
-	{ command = "mpv", args = [ "--" ] , fork = true, silent = true },
+	{ command = "mpv", args = [ "--" ], fork = true, silent = true },
 ]
 
 text_default	= [
