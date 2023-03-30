@@ -26,7 +26,7 @@ vim.opt.softtabstop = 4
 vim.cmd [[packadd packer.nvim]]
 require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use 'javiorfo/nvim-nyctovim'
+    use 'javiorfo/nvim-whisky'
     use 'javiorfo/nvim-hemingway'
     use 'javiorfo/nvim-wildcat'
     use 'javiorfo/nvim-fuel'
@@ -49,7 +49,7 @@ require('packer').startup(function(use)
 )
 
 -- colorscheme
-vim.cmd [[colorscheme silentium]]
+vim.cmd [[colorscheme malt]]
 
 -- NvimTree
 vim.g.loaded = 1
