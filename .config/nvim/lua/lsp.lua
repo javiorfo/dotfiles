@@ -5,11 +5,18 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 
+local lsp_config = require'lspconfig'
+
 -- Rust
-require'lspconfig'.rust_analyzer.setup{}
+lsp_config.rust_analyzer.setup{}
+
+-- Kotlin
+lsp_config.kotlin_language_server.setup{
+    root_dir = lsp_config.util.root_pattern("Kotlin.kt", "pom.xml");
+}
 
 -- Lua
-require'lspconfig'.lua_ls.setup {
+lsp_config.lua_ls.setup {
     settings = {
         Lua = {
             runtime = {
