@@ -12,7 +12,7 @@ lsp_config.rust_analyzer.setup{}
 
 -- Kotlin
 lsp_config.kotlin_language_server.setup{
-    root_dir = lsp_config.util.root_pattern("Kotlin.kt", "pom.xml");
+    root_dir = lsp_config.util.root_pattern("settings.gradle", "pom.xml");
 }
 
 -- Lua
