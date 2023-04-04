@@ -10,11 +10,6 @@ local lsp_config = require'lspconfig'
 -- Rust
 lsp_config.rust_analyzer.setup{}
 
--- Kotlin
-lsp_config.kotlin_language_server.setup{
-    root_dir = lsp_config.util.root_pattern("settings.gradle", "pom.xml");
-}
-
 -- Lua
 lsp_config.lua_ls.setup {
     settings = {
