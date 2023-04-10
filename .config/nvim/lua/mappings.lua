@@ -30,7 +30,8 @@ vim.api.nvim_set_keymap('n', '<leader>f', '<cmd>lua vim.lsp.buf.format{ async = 
 -- Telescope
 vim.api.nvim_set_keymap('n', '<leader>ff', '<cmd>Telescope find_files<CR>', opts)
 vim.api.nvim_set_keymap('n', '<leader>fg', '<cmd>Telescope live_grep<CR>', opts)
-vim.api.nvim_set_keymap('n', 'gr', '<cmd>lua require("telescope.builtin").lsp_references()<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>fh', '<cmd>Telescope help_tags<CR>', opts)
+vim.api.nvim_set_keymap('n', 'gr',         '<cmd>lua require("telescope.builtin").lsp_references()<CR>', opts)
 vim.api.nvim_set_keymap('n', '<leader>di', '<cmd>lua require("telescope.builtin").diagnostics()<CR>', opts)
 
 -- Hemingway
