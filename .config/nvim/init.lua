@@ -34,6 +34,7 @@ require('packer').startup(function(use)
     use 'javiorfo/nvim-mug'
     use 'javiorfo/nvim-ship'
     use 'javiorfo/nvim-spinetta'
+    use 'javiorfo/nvim-popcorn'
     use 'neovim/nvim-lspconfig'
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-tree/nvim-web-devicons'
