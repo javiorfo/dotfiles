@@ -12,3 +12,7 @@
 - [XMonad](https://github.com/charkuils/dotfiles/blob/master/.config/xmonad)
 - [Zathura](https://github.com/charkuils/dotfiles/blob/master/.config/zathura/zathurarc)
 - [Zsh](https://github.com/charkuils/dotfiles/blob/master/.zshrc)
+
+## Support Charkuils' Work
+
+<img src="https://github.com/charkuils/img/blob/master/binance/BinancePayQR.png?raw=true" alt="binance" style="width:300px;"/>
