@@ -63,15 +63,7 @@ require'nvim-tree'.setup{
         show_on_open_dirs = true
     },
     renderer = {
-        group_empty = true,
-        icons = {
-            glyphs = {
-                folder = {
-                    arrow_open = "",
-                    arrow_closed = ""
-                }
-            }
-        }
+        group_empty = true
     },
     filters = {
         dotfiles = true
