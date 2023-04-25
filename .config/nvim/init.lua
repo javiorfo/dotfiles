@@ -95,7 +95,7 @@ require("lazy").setup({
         ft = "ship",
         dependencies = { "javiorfo/nvim-popcorn", "javiorfo/nvim-spinetta" },
         config = function()
-            local path = "/home/javier/.local/share/nvim/site/pack/packer/start/nvim-ship/tests/"
+            local path = "/home/javier/.local/share/nvim/lazy/nvim-ship/tests/"
             require'ship'.setup {
                 special = {
                     {
