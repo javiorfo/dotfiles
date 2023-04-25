@@ -92,20 +92,9 @@ require("lazy").setup({
         ft = "ship",
         dependencies = { "javiorfo/nvim-popcorn", "javiorfo/nvim-spinetta" },
         config = function()
-            local path = "/home/javier/.local/share/nvim/lazy/nvim-ship/tests/"
             require'ship'.setup {
                 special = {
-                    {
-                        name = "testing",
-                        take = {
-                            ship_file = path .. "ships/auth.ship",
-                            ship_field = "token"
-                        },
-                        update = {
-                            lua_file = path .. "env/dev.lua",
-                            lua_field = "token"
-                        }
-                    }
+                    dofile("/path/to/special.lua")
                 }
             }
         end
