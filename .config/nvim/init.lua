@@ -50,7 +50,7 @@ require("lazy").setup({
     },
     {
         "javiorfo/nvim-hemingway",
-        lazy = false,
+        lazy = true,
         dependencies = { "javiorfo/nvim-popcorn" },
         keys = {
             { "<leader>co", "<Plug>HemingwayComment" },
