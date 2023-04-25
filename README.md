@@ -4,7 +4,7 @@
 - [Joshuto](https://github.com/javiorfo/dotfiles/blob/master/.config/joshuto)
 - [Leftwm](https://github.com/javiorfo/dotfiles/blob/master/.config/leftwm)
 - [Mutt](https://github.com/javiorfo/odotfiles/blob/master/.mutt)
-- [Neovim](https://github.com/javiorfo/dotfiles/blob/master/.config/nvim)
+- [Neovim](https://github.com/javiorfo/dotfiles/blob/master/.config/nvim/init.lua)
 - [Qutebrowser](https://github.com/javiorfo/dotfiles/blob/master/.config/qutebrowser)
 - [Vim](https://github.com/charkuils/javiorfo/blob/master/.vimrc)
 - [Vieb](https://github.com/charkuils/javiorfo/blob/master/.config/Vieb)
