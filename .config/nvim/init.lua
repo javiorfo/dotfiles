@@ -73,11 +73,8 @@ require("lazy").setup({
     {
         "javiorfo/nvim-wildcat",
         lazy = true,
-        cmd = "WildcatInfo",
-        dependencies = { "javiorfo/nvim-popcorn" },
-        config = function()
-            require'wildcat'.setup{}
-        end
+        cmd = { "WildcatRun", "WildcatUp", "WildcatInfo" },
+        dependencies = { "javiorfo/nvim-popcorn" }
     },
     {
         "javiorfo/nvim-soil",
