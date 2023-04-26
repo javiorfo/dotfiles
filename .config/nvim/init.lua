@@ -201,18 +201,18 @@ require("lazy").setup({
             }
         end,
         keys = {
-            { 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>' },
-            { 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>' },
-            { 'K', '<cmd>lua vim.lsp.buf.hover()<CR>' },
-            { 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>' },
-            { '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>' },
+            { 'gD',         '<cmd>lua vim.lsp.buf.declaration()<CR>' },
+            { 'gd',         '<cmd>lua vim.lsp.buf.definition()<CR>' },
+            { 'K',          '<cmd>lua vim.lsp.buf.hover()<CR>' },
+            { 'gi',         '<cmd>lua vim.lsp.buf.implementation()<CR>' },
+            { '<C-k>',      '<cmd>lua vim.lsp.buf.signature_help()<CR>' },
             { '<leader>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>' },
             { '<leader>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>' },
             { '<leader>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>' },
-            { '<leader>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>' },
+            { '<leader>D',  '<cmd>lua vim.lsp.buf.type_definition()<CR>' },
             { '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>' },
             { '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>' },
-            { '<leader>f', '<cmd>lua vim.lsp.buf.format{ async = true }<CR>' }
+            { '<leader>f',  '<cmd>lua vim.lsp.buf.format{ async = true }<CR>' }
         }
     },
     {
