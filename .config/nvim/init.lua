@@ -97,7 +97,11 @@ require("lazy").setup({
                     dofile("/path/to/special.lua")
                 }
             }
-        end
+        end,
+        keys = {
+            { "<leader>sh", "<cmd>Ship<cr>" },
+            { "<leader>sc", "<cmd>ShipCloseResponse<cr>" }
+        }
     },
     {
         "nvim-tree/nvim-tree.lua",
