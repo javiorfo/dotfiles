@@ -90,15 +90,14 @@ require("lazy").setup({
         "javiorfo/nvim-ship",
         lazy = true,
         ft = "ship",
+        cmd = { "ShipCreate", "ShipCreateEnv" },
         dependencies = { "javiorfo/nvim-popcorn", "javiorfo/nvim-spinetta" },
         config = function()
             require'ship'.setup {
                 response = {
                     window_type = 'p'
                 },
-                special = {
-                    dofile("/path/to/special.lua")
-                }
+                special = dofile("/path/to/special.lua")
             }
         end,
         keys = {
