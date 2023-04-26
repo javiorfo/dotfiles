@@ -93,6 +93,9 @@ require("lazy").setup({
         dependencies = { "javiorfo/nvim-popcorn", "javiorfo/nvim-spinetta" },
         config = function()
             require'ship'.setup {
+                response = {
+                    window_type = 'p'
+                },
                 special = {
                     dofile("/path/to/special.lua")
                 }
