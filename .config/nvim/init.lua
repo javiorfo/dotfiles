@@ -186,7 +186,7 @@ require("lazy").setup({
             lsp_config.hls.setup{}
             
             -- Kotlin
-            lsp_config.kotlin_language_server.setup{
+            lsp_config.kotlin_language_server.setup {
                 root_dir = lsp_config.util.root_pattern("settings.gradle", "pom.xml");
             }
 
