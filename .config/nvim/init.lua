@@ -169,7 +169,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "lua", "haskell", "rust" },
+        ft = { "lua", "haskell", "rust", "kotlin" },
         config = function()
             local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
             for type, icon in pairs(signs) do
@@ -179,13 +179,18 @@ require("lazy").setup({
 
             local lsp_config = require'lspconfig'
 
-            -- Rust LSP
+            -- Rust
             lsp_config.rust_analyzer.setup{}
 
-            -- Haskell LSP
+            -- Haskell
             lsp_config.hls.setup{}
+            
+            -- Kotlin
+            lsp_config.kotlin_language_server.setup{
+                root_dir = lsp_config.util.root_pattern("settings.gradle", "pom.xml");
+            }
 
-            -- Lua LSP
+            -- Lua
             lsp_config.lua_ls.setup {
                 settings = {
                     Lua = {
