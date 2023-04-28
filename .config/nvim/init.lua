@@ -182,6 +182,9 @@ require("lazy").setup({
             -- Rust
             lsp_config.rust_analyzer.setup{}
             
+            -- Clojure
+            lsp_config.clojure_lsp.setup{}
+            
             -- Kotlin
             [[ lsp_config.kotlin_language_server.setup {
                 root_dir = lsp_config.util.root_pattern("settings.gradle", "pom.xml");
