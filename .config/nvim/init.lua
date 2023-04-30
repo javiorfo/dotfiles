@@ -169,7 +169,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "lua", "rust", "c" },
+        ft = { "lua", "rust", "c", "haskell" },
         config = function()
             local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
             for type, icon in pairs(signs) do
@@ -184,6 +184,9 @@ require("lazy").setup({
             
             -- C
             lsp_config.clangd.setup{}
+            
+            -- Haskell
+            lsp_config.hls.setup{}
             
             -- Kotlin
             [[ lsp_config.kotlin_language_server.setup {
