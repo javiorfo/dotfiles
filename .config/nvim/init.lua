@@ -60,7 +60,7 @@ require("lazy").setup({
     {
         "javiorfo/nvim-fuel",
         lazy = true,
-        ft = { "c", "cpp", "go", "haskell", "java", "kotlin", "lua", "python", "rust", "scala" },
+        ft = { "c", "cpp", "go", "haskell", "java", "kotlin", "lua", "python", "rust", "scala", "zig" },
         dependencies = { "javiorfo/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
