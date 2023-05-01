@@ -150,6 +150,12 @@ require("lazy").setup({
             require'lualine'.setup {
                 options = {
                     disabled_filetypes = { 'NvimTree' }
+                },
+                sections = {
+                    lualine_b = {{
+                        'diagnostics',
+                        symbols = { error = '  ', warn = '  ', info = '  ', hint = ' ' }
+                    }}
                 }
             }
         end
@@ -171,7 +177,7 @@ require("lazy").setup({
         lazy = true,
         ft = { "lua", "rust", "c", "haskell" },
         config = function()
-            local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+            local signs = { Error = " ", Warn = "", Hint = "", Info = "" }
             for type, icon in pairs(signs) do
               local hl = "DiagnosticSign" .. type
               vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
