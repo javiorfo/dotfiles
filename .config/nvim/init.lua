@@ -60,7 +60,7 @@ require("lazy").setup({
     {
         "javiorfo/nvim-fuel",
         lazy = true,
-        ft = { "c", "cpp", "go", "haskell", "java", "kotlin", "lua", "python", "rust", "scala", "zig" },
+        ft = { "c", "java", "kotlin", "lua", "rust" },
         dependencies = { "javiorfo/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
@@ -175,7 +175,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "lua", "rust" },
+        ft = { "lua", "rust", "kotlin" },
         config = function()
             local signs = { Error = " ", Warn = "", Hint = "", Info = "" }
             for type, icon in pairs(signs) do
@@ -189,9 +189,9 @@ require("lazy").setup({
             lsp_config.rust_analyzer.setup{}
             
             -- Kotlin
-            [[ lsp_config.kotlin_language_server.setup {
+            lsp_config.kotlin_language_server.setup {
                 root_dir = lsp_config.util.root_pattern("settings.gradle", "pom.xml");
-            } ]]
+            }
 
             -- Lua
             lsp_config.lua_ls.setup {
