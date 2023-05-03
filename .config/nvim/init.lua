@@ -40,6 +40,14 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+local function lsp_icons()
+  local signs = { Error = " ", Warn = "", Hint = "", Info = "" }
+  for type, icon in pairs(signs) do
+      local hl = "DiagnosticSign" .. type
+      vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+  end
+end
+  
 require("lazy").setup({
     {
         "javiorfo/nvim-whisky",
@@ -178,11 +186,7 @@ require("lazy").setup({
         lazy = true,
         ft = { "lua", "rust", "kotlin" },
         config = function()
-            local signs = { Error = " ", Warn = "", Hint = "", Info = "" }
-            for type, icon in pairs(signs) do
-              local hl = "DiagnosticSign" .. type
-              vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
-            end
+            lsp_icons()
 
             local lsp_config = require'lspconfig'
 
@@ -290,7 +294,9 @@ require("lazy").setup({
             local home = os.getenv("HOME")
             local jdk = '/usr/lib/jvm/java-11-openjdk/bin/java'
 --             local jdk = '/usr/lib/jvm/java-17-openjdk/bin/java'
-
+            
+            lsp_icons()
+        
             local config = {
               capabilities = capabilities,
               cmd = {
