@@ -311,7 +311,7 @@ require("lazy").setup({
                 '-configuration', home .. '/.config/nvim/servers/jdtls/config_linux',
                 '-data', home .. '/Documentos/java'
               },
-              root_dir = require('jdtls.setup').find_root({'.git', 'mvnw'}),
+              root_dir = require('jdtls.setup').find_root({'.git', 'mvnw', 'gradlew'}),
               settings = {
                 java = {
                 }
