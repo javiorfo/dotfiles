@@ -95,7 +95,8 @@ require("lazy").setup({
         config = function()
             require'ship'.setup {
                 response = {
-                    window_type = 'p'
+                    window_type = 'p',
+                    size = 30
                 },
                 special = dofile("/path/to/special.lua")
             }
