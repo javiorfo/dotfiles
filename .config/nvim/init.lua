@@ -159,12 +159,6 @@ require("lazy").setup({
             require'lualine'.setup {
                 options = {
                     disabled_filetypes = { 'NvimTree' }
-                },
-                sections = {
-                    lualine_b = {{
-                        'diagnostics',
-                        symbols = { error = '  ', warn = '  ', info = '  ', hint = ' ' }
-                    }}
                 }
             }
         end
