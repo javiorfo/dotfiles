@@ -1,0 +1,7 @@
+(
+    border_width: 3,
+    margin: 4,
+    default_border_color: "#222222",
+    floating_border_color: "#005500",
+    focused_border_color: "#949494",
+)
