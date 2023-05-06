@@ -5,6 +5,7 @@
 - [Leftwm](https://github.com/javiorfo/dotfiles/blob/master/.config/leftwm)
 - [Mutt](https://github.com/javiorfo/odotfiles/blob/master/.mutt)
 - [Neovim](https://github.com/javiorfo/dotfiles/blob/master/.config/nvim/init.lua)
+- [Polybar](https://github.com/javiorfo/dotfiles/blob/master/.config/leftwm/themes/current/polybar.config)
 - [Qutebrowser](https://github.com/javiorfo/dotfiles/blob/master/.config/qutebrowser)
 - [Vim](https://github.com/javiorfo/dotfiles/blob/master/.vimrc)
 - [Vieb](https://github.com/javiorfo/dotfiles/blob/master/.config/Vieb)
