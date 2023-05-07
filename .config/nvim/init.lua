@@ -178,7 +178,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "c", "lua", "rust", "kotlin" },
+        ft = { "lua", "rust" },
         config = function()
             lsp_icons()
 
@@ -186,14 +186,6 @@ require("lazy").setup({
 
             -- Rust
             lsp_config.rust_analyzer.setup{}
-        
-            -- C
-            lsp_config.clangd.setup{}
-            
-            -- Kotlin
-            lsp_config.kotlin_language_server.setup {
-                root_dir = lsp_config.util.root_pattern("settings.gradle", "pom.xml");
-            }
 
             -- Lua
             lsp_config.lua_ls.setup {
