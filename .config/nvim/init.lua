@@ -178,11 +178,14 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "lua", "rust" },
+        ft = { "c", "lua", "rust" },
         config = function()
             lsp_icons()
 
             local lsp_config = require'lspconfig'
+        
+            -- C
+            lsp_config.clangd.setup{}
 
             -- Rust
             lsp_config.rust_analyzer.setup{}
