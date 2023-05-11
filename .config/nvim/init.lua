@@ -178,20 +178,28 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "c", "lua", "rust" },
+        ft = { "c", "lua", "rust", "zig" },
         config = function()
             lsp_icons()
+          
+            local on_attach = function(client, _)
+                client.server_capabilities.semanticTokensProvider = nil
+            end
 
             local lsp_config = require'lspconfig'
         
             -- C
-            lsp_config.clangd.setup{}
+            lsp_config.clangd.setup{ on_attach = on_attach }
 
             -- Rust
-            lsp_config.rust_analyzer.setup{}
+            lsp_config.rust_analyzer.setup{ on_attach = on_attach }
+        
+            -- Zig
+            lsp_config.zls.setup{ on_attach = on_attach }
 
             -- Lua
             lsp_config.lua_ls.setup {
+                on_attach = on_attach,
                 settings = {
                     Lua = {
                         runtime = {
