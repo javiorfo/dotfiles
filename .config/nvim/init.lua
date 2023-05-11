@@ -50,10 +50,10 @@ end
   
 require("lazy").setup({
     {
-        "javiorfo/nvim-whisky",
+        "javiorfo/nvim-nyctophilia",
         lazy = false,
         config = function()
-            vim.cmd[[colorscheme malt]]
+            vim.cmd[[colorscheme umbra]]
         end
     },
     {
