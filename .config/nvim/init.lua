@@ -92,6 +92,7 @@ require("lazy").setup({
     {
         "javiorfo/nvim-springtime",
         lazy = true,
+        cmd = "Springtime",
         dependencies = { "javiorfo/nvim-popcorn" }
     },
     {
@@ -178,7 +179,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "c", "lua", "rust" },
+        ft = { "lua", "rust" },
         config = function()
             lsp_icons()
           
@@ -187,9 +188,6 @@ require("lazy").setup({
             end
 
             local lsp_config = require'lspconfig'
-        
-            -- C
-            lsp_config.clangd.setup{ on_attach = on_attach }
 
             -- Rust
             lsp_config.rust_analyzer.setup{ on_attach = on_attach }
