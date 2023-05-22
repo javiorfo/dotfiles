@@ -91,12 +91,6 @@ require("lazy").setup({
         dependencies = { "javiorfo/nvim-popcorn" }
     },
     {
-        "javiorfo/nvim-minimaline",
-        lazy = false,
-        config = function()
-        end
-    },
-    {
         "javiorfo/nvim-ship",
         lazy = true,
         ft = "ship",
@@ -153,6 +147,17 @@ require("lazy").setup({
             { "<C-g>", "<cmd>NvimTreeFindFile<cr>" },
             { "<C-c>", "<cmd>NvimTreeClose<cr>" },
         }
+    },
+    {
+        "nvim-lualine/lualine.nvim",
+        lazy = false,
+        config = function()
+            require'lualine'.setup {
+                options = {
+                    disabled_filetypes = { 'NvimTree' }
+                }
+            }
+        end
     },
     {
         "nvim-telescope/telescope.nvim",
