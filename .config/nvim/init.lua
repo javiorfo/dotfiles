@@ -21,11 +21,6 @@ vim.opt.splitbelow = true
 -- Mappings
 local opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap('i', '{<CR>', '{<CR>}<Esc>O', opts)
-vim.api.nvim_set_keymap('i', '{}', '{}<Left>', opts)
-vim.api.nvim_set_keymap('i', '[]', '[]<Left>', opts)
-vim.api.nvim_set_keymap('i', '()', '()<Left>', opts)
-vim.api.nvim_set_keymap('i', '""', '""<Left>', opts)
-vim.api.nvim_set_keymap('i', "''", "''<Left>", opts)
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -68,7 +63,7 @@ require("lazy").setup({
     {
         "javiorfo/nvim-fuel",
         lazy = true,
-        ft = { "c", "java", "kotlin", "lua", "rust" },
+        ft = { "c", "java", "haskell", "lua", "rust", "zig" },
         dependencies = { "javiorfo/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
@@ -94,6 +89,12 @@ require("lazy").setup({
         lazy = true,
         cmd = "Springtime",
         dependencies = { "javiorfo/nvim-popcorn" }
+    },
+    {
+        "javiorfo/nvim-minimaline",
+        lazy = false,
+        config = function()
+        end
     },
     {
         "javiorfo/nvim-ship",
@@ -154,17 +155,6 @@ require("lazy").setup({
         }
     },
     {
-        "nvim-lualine/lualine.nvim",
-        lazy = false,
-        config = function()
-            require'lualine'.setup {
-                options = {
-                    disabled_filetypes = { 'NvimTree' }
-                }
-            }
-        end
-    },
-    {
         "nvim-telescope/telescope.nvim",
         lazy = true,
         dependencies = { "nvim-lua/plenary.nvim" },
@@ -179,7 +169,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "c", "lua", "rust", "zig" },
+        ft = { "c", "haskell", "lua", "rust", "zig" },
         config = function()
             lsp_icons()
           
@@ -191,6 +181,9 @@ require("lazy").setup({
         
             -- C
             lsp_config.clangd.setup{ on_attach = on_attach }
+        
+            -- Haskell
+            lsp_config.hls.setup{ on_attach = on_attach }
 
             -- Rust
             lsp_config.rust_analyzer.setup{ on_attach = on_attach }
