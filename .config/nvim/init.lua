@@ -63,7 +63,7 @@ require("lazy").setup({
     {
         "javiorfo/nvim-fuel",
         lazy = true,
-        ft = { "c", "java", "lua", "rust" },
+        ft = { "c", "haskell", "java", "lua", "rust" },
         dependencies = { "javiorfo/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
@@ -174,7 +174,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "c", "lua", "rust" },
+        ft = { "c", "haskell", "lua", "rust" },
         config = function()
             lsp_icons()
           
