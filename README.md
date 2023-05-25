@@ -1,6 +1,7 @@
 # Dotfiles
 
 - [Alacritty](https://github.com/javiorfo/dotfiles/blob/master/.config/alacritty)
+- [Helix](https://github.com/javiorfo/dotfiles/blob/master/.config/helix)
 - [Joshuto](https://github.com/javiorfo/dotfiles/blob/master/.config/joshuto)
 - [Leftwm](https://github.com/javiorfo/dotfiles/blob/master/.config/leftwm)
 - [Mutt](https://github.com/javiorfo/odotfiles/blob/master/.mutt)
