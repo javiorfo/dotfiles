@@ -1,0 +1,26 @@
+[[language]]
+name = "java"
+scope = "source.java"
+injection-regex = "java"
+file-types = ["java"]
+roots = ["pom.xml", "build.gradle"]
+language-server = { command = "jdtls", args =[
+    "/usr/lib/jvm/java-17-openjdk/bin/java",
+    "-Declipse.application=org.eclipse.jdt.ls.core.id1",
+    "-Dosgi.bundles.defaultStartLevel=4",
+    "-Declipse.product=org.eclipse.jdt.ls.core.product",
+    "-Dlog.protocol=true",
+    "-Dlog.level=ALL",
+    "-Xms1g",
+    "--add-modules=ALL-SYSTEM",
+    "--add-opens java.base/java.util=ALL-UNNAMED",
+    "--add-opens java.base/java.lang=ALL-UNNAMED",
+    "-jar /home/javier/.config/nvim/servers/jdtls/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar",
+    "-configuration /home/javier/.config/nvim/servers/jdtls/config_linux",
+    "-data /home/javier/Documentos/java"
+    ] }
+indent = { tab-width = 4, unit = "    " }
+
+[[grammar]]
+name = "java"
+source = { git = "https://github.com/tree-sitter/tree-sitter-java", rev = "09d650def6cdf7f479f4b78f595e9ef5b58ce31e" }
