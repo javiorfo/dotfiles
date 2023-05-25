@@ -1,0 +1,4 @@
+theme = "jellybeans"
+
+[editor.file-picker]
+hidden = false
