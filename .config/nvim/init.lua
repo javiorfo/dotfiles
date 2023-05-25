@@ -321,6 +321,7 @@ require("lazy").setup({
             }
 
             config['on_attach'] = function(client, bufnr)
+              client.server_capabilities.semanticTokensProvider = nil
               require('jdtls').setup_dap({ hotcodereplace = 'auto' })
             end
 
