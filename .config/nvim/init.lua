@@ -45,26 +45,26 @@ end
   
 require("lazy").setup({
     {
-        "javiorfo/nvim-nyctophilia",
+        "charkuils/nvim-nyctophilia",
         lazy = false,
         config = function()
             vim.cmd[[colorscheme umbra]]
         end
     },
     {
-        "javiorfo/nvim-hemingway",
+        "charkuils/nvim-hemingway",
         lazy = true,
-        dependencies = { "javiorfo/nvim-popcorn" },
+        dependencies = { "charkuils/nvim-popcorn" },
         keys = {
             { "<leader>co", "<Plug>HemingwayComment" },
             { "<leader>co", "<Plug>HemingwayMultiComment", mode = "v" },
         }
     },
     {
-        "javiorfo/nvim-fuel",
+        "charkuils/nvim-fuel",
         lazy = true,
         ft = { "c", "java", "lua", "haskell" },
-        dependencies = { "javiorfo/nvim-popcorn" },
+        dependencies = { "charkuils/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
         end,
@@ -74,28 +74,28 @@ require("lazy").setup({
         }
     },
     {
-        "javiorfo/nvim-wildcat",
+        "charkuils/nvim-wildcat",
         lazy = true,
         cmd = { "WildcatRun", "WildcatClean", "WildcatUp", "WildcatInfo" },
-        dependencies = { "javiorfo/nvim-popcorn" }
+        dependencies = { "charkuils/nvim-popcorn" }
     },
     {
-        "javiorfo/nvim-soil",
+        "charkuils/nvim-soil",
         lazy = true,
         ft = "plantuml"
     },
     {
-        "javiorfo/nvim-springtime",
+        "charkuils/nvim-springtime",
         lazy = true,
         cmd = "Springtime",
-        dependencies = { "javiorfo/nvim-popcorn" }
+        dependencies = { "charkuils/nvim-popcorn" }
     },
     {
-        "javiorfo/nvim-ship",
+        "charkuils/nvim-ship",
         lazy = true,
         ft = "ship",
         cmd = { "ShipCreate", "ShipCreateEnv" },
-        dependencies = { "javiorfo/nvim-popcorn", "javiorfo/nvim-spinetta" },
+        dependencies = { "charkuils/nvim-popcorn", "charkuils/nvim-spinetta" },
         config = function()
             require'ship'.setup {
                 response = {
