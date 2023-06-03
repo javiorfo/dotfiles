@@ -52,6 +52,17 @@ require("lazy").setup({
         end
     },
     {
+        "javiorfo/nvim-minimaline",
+        lazy = false,
+        config = function()
+            require'minimaline'.setup {
+                options = {
+                    disabled_filetypes = { 'NvimTree' }
+                }
+            }
+        end
+    },
+    {
         "javiorfo/nvim-hemingway",
         lazy = true,
         dependencies = { "javiorfo/nvim-popcorn" },
@@ -63,7 +74,7 @@ require("lazy").setup({
     {
         "javiorfo/nvim-fuel",
         lazy = true,
-        ft = { "c", "java", "lua", "haskell" },
+        ft = { "c", "java", "lua", "haskell", "rust" },
         dependencies = { "javiorfo/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
@@ -149,17 +160,6 @@ require("lazy").setup({
         }
     },
     {
-        "nvim-lualine/lualine.nvim",
-        lazy = false,
-        config = function()
-            require'lualine'.setup {
-                options = {
-                    disabled_filetypes = { 'NvimTree' }
-                }
-            }
-        end
-    },
-    {
         "nvim-telescope/telescope.nvim",
         lazy = true,
         dependencies = { "nvim-lua/plenary.nvim" },
@@ -174,7 +174,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "c", "lua", "haskell" },
+        ft = { "c", "lua", "haskell", "rust" },
         config = function()
             lsp_icons()
           
@@ -189,6 +189,9 @@ require("lazy").setup({
 
             -- Haskell
             lsp_config.hls.setup{ on_attach = on_attach }
+        
+            -- Rust
+            lsp_config.rust_analyzer.setup{ on_attach = on_attach }
 
             -- Lua
             lsp_config.lua_ls.setup {
