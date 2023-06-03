@@ -178,6 +178,7 @@ template                     = " %archlogo% %UnsafeStdinReader% }{ "
                                ++ getStringIfVisible weatherVisible        ("%"                ++ weatherStationID ++ "%" ++ xmobarSep)
                                ++ getStringIfVisible dateZoneVisible       ("%time%"           ++ xmobarSep                           )
                                ++ getStringIfVisible kbdVisible            ("%kbd% "                                                  )
+                               where getStringIfVisible visible command = if visible then command else ""
 
 commands                     =    getStringIfVisible multiCpuVisible      multiCpu
                                ++ getStringIfVisible multiCoreTempVisible multiCoreTemp
@@ -189,6 +190,7 @@ commands                     =    getStringIfVisible multiCpuVisible      multiC
                                ++ getStringIfVisible volumeVisible        volume
                                ++ getStringIfVisible batteryVisible       battery
                                ++ getStringIfVisible kbdVisible           kbd
+                               where getStringIfVisible visible command = if visible then command else ""
 
 dynNetwork                   = " -C '[Run DynNetwork [\"-t\",\"" ++ dynNetworkUpIcon ++ " <tx>KB " ++ dynNetworkDownIcon ++ " <rx>KB\"] 10]' "
 
@@ -225,6 +227,3 @@ battery                      = " -C '[Run Battery [\"-t\",\"<acstatus>\",\"-L\",
 -- FUNCTIONS
 xmobarFont :: String -> Integer -> String
 xmobarFont fo fs = "xft:" ++ fo ++ (if bold then ":bold" else "") ++ ":size=" ++ show fs
-
-getStringIfVisible :: Bool -> String -> String
-getStringIfVisible visible command = if visible then command else ""
