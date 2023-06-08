@@ -15,6 +15,3 @@
 - [XMonad](https://github.com/javiorfo/dotfiles/blob/master/.config/xmonad)
 - [Zathura](https://github.com/javiorfo/dotfiles/blob/master/.config/zathura/zathurarc)
 - [Zsh](https://github.com/javiorfo/dotfiles/blob/master/.zshrc)
-
-## Support
-- Binance: **Pay ID 546639204**
