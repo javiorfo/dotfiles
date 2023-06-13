@@ -170,7 +170,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "lua", "go", "rust" },
+        ft = { "c", "lua", "go", "rust" },
         config = function()
             lsp_icons()
           
@@ -179,7 +179,10 @@ require("lazy").setup({
             end
 
             local lsp_config = require'lspconfig'
-            
+        
+            -- C
+            lsp_config.clangd.setup{ on_attach = on_attach }
+        
             -- Go
             lsp_config.gopls.setup{ on_attach = on_attach }
         
