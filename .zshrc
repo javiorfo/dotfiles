@@ -26,7 +26,7 @@ export EXA_COLORS="di=1;38;5;242:fi=38;5;250:ex=38;5;250:*.pdf=38;5;250:ex=38;5;
 function git_branch(){                                                                                                 
     ref=$(git symbolic-ref --short --quiet HEAD 2>/dev/null)
     if [ -n "${ref}" ]; then
-        echo " ""$ref"""
+        echo "󰊢 ""$ref"""
     fi
 }
 
