@@ -55,7 +55,10 @@ require("lazy").setup({
         "javiorfo/nvim-minimaline",
         lazy = false,
         config = function()
-            require'minimaline'.setup()
+            require'minimaline'.setup{
+                disabled_filetypes = { "NvimTree*" },
+                lsp_colors_enabled = true
+            }
         end
     },
     {
