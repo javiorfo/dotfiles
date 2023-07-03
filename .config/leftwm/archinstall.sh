@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Author: CaoSystema
+# Author: Javier Orfo
 
 sudo pacman -S --needed dmenu pamixer pulseaudio-alsa feh alacritty ttf-ubuntu-mono-nerd polybar
 paru -S --needed leftwm lux
