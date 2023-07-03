@@ -15,3 +15,8 @@
 - [XMonad](https://github.com/javiorfo/dotfiles/blob/master/.config/xmonad)
 - [Zathura](https://github.com/javiorfo/dotfiles/blob/master/.config/zathura/zathurarc)
 - [Zsh](https://github.com/javiorfo/dotfiles/blob/master/.zshrc)
+
+---
+
+### Donate
+- [Paypal](https://www.paypal.com/donate/?hosted_button_id=FA7SGLSCT2H8G)
