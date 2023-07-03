@@ -73,7 +73,7 @@ require("lazy").setup({
     {
         "caosystema/nvim-fuel",
         lazy = true,
-        ft = { "c", "java", "lua", "go", "rust", "zig" },
+        ft = { "c", "java", "lua", "go", "rust" },
         dependencies = { "caosystema/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
@@ -141,17 +141,6 @@ require("lazy").setup({
                     dotfiles = true
                 }
             }
-
-            local function open_nvim_tree(data)
-              local directory = vim.fn.isdirectory(data.file) == 1
-              if not directory then
-                return
-              end
-              vim.cmd.cd(data.file)
-              require("nvim-tree.api").tree.open()
-            end
-
-            vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
         end,
         keys = {
             { "<C-g>", "<cmd>NvimTreeFindFile<cr>" },
@@ -173,7 +162,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "c", "lua", "go", "rust", "zig" },
+        ft = { "c", "lua", "go", "rust" },
         config = function()
             lsp_icons()
           
@@ -191,9 +180,6 @@ require("lazy").setup({
         
             -- Rust
             lsp_config.rust_analyzer.setup{ on_attach = on_attach }
-
-            -- Zig
-            lsp_config.zls.setup { on_attach = on_attach }
 
             -- Lua
             lsp_config.lua_ls.setup {
@@ -287,66 +273,11 @@ require("lazy").setup({
     {
         "mfussenegger/nvim-jdtls",
         lazy = true,
-        ft = "java",
-        config = function()
-            local home = os.getenv("HOME")
-            local jdk = '/usr/lib/jvm/java-11-openjdk/bin/java'
---             local jdk = '/usr/lib/jvm/java-17-openjdk/bin/java'
-            
-            lsp_icons()
-        
-            local config = {
-              capabilities = capabilities,
-              cmd = {
-                jdk,
-                '-Declipse.application=org.eclipse.jdt.ls.core.id1',
-                '-Dosgi.bundles.defaultStartLevel=4',
-                '-Declipse.product=org.eclipse.jdt.ls.core.product',
-                '-Dlog.protocol=true',
-                '-Dlog.level=ALL',
-                '-Xms1g',
-                '-javaagent:/usr/local/share/lombok/lombok.jar',
-                '--add-modules=ALL-SYSTEM',
-                '--add-opens', 'java.base/java.util=ALL-UNNAMED',
-                '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
-                '-jar', home .. '/.config/nvim/servers/jdtls/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar',
-                '-configuration', home .. '/.config/nvim/servers/jdtls/config_linux',
-                '-data', home .. '/Documentos/java'
-              },
-              root_dir = require('jdtls.setup').find_root({'.git', 'mvnw', 'gradlew'}),
-              settings = {
-                java = {
-                }
-              },
-              init_options = {
-                bundles = {
-                    vim.fn.glob("~/.config/nvim/servers/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-0.36.0.jar")
-                }
-              }
-            }
-
-            config['on_attach'] = function(client, bufnr)
-              client.server_capabilities.semanticTokensProvider = nil
-              require('jdtls').setup_dap({ hotcodereplace = 'auto' })
-            end
-
-            local dap = require('dap')
-
-            dap.configurations.java = {
-              {
-                type = 'java';
-                request = 'attach';
-                name = "Debug (Attach) - Remote";
-                hostName = "127.0.0.1";
-                port = 8787;
-              },
-            }
-
-            require('jdtls').start_or_attach(config)
-        end
+        ft = "java"
     },
     {
         "mfussenegger/nvim-dap",
         lazy = true,
+        ft = "java"
     }
 })
