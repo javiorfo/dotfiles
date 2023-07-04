@@ -1,4 +1,4 @@
--- Author: Javier Orfo
+-- Author: CaoSystema
 
 module XMonad.Util.Settings
     ( terminal
