@@ -1,7 +1,6 @@
 # Dotfiles
 
 - [Alacritty](https://github.com/caosystema/dotfiles/blob/master/.config/alacritty)
-- [Bash](https://github.com/caosystema/dotfiles/blob/master/.bashrc)
 - [Helix](https://github.com/caosystema/dotfiles/blob/master/.config/helix)
 - [Joshuto](https://github.com/caosystema/dotfiles/blob/master/.config/joshuto)
 - [Leftwm](https://github.com/caosystema/dotfiles/blob/master/.config/leftwm)
