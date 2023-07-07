@@ -45,14 +45,14 @@ end
   
 require("lazy").setup({
     {
-        "caosystema/nvim-nyctophilia",
+        "javiorfo/nvim-nyctophilia",
         lazy = false,
         config = function()
             vim.cmd[[colorscheme umbra]]
         end
     },
     {
-        "caosystema/nvim-minimaline",
+        "javiorfo/nvim-minimaline",
         lazy = false,
         config = function()
             require'minimaline'.setup{
@@ -62,19 +62,19 @@ require("lazy").setup({
         end
     },
     {
-        "caosystema/nvim-hemingway",
+        "javiorfo/nvim-hemingway",
         lazy = true,
-        dependencies = { "caosystema/nvim-popcorn" },
+        dependencies = { "javiorfo/nvim-popcorn" },
         keys = {
             { "<leader>co", "<Plug>HemingwayComment" },
             { "<leader>co", "<Plug>HemingwayMultiComment", mode = "v" },
         }
     },
     {
-        "caosystema/nvim-fuel",
+        "javiorfo/nvim-fuel",
         lazy = true,
-        ft = { "c", "java", "lua", "go", "rust" },
-        dependencies = { "caosystema/nvim-popcorn" },
+        ft = { "java", "lua", "go", "rust" },
+        dependencies = { "javiorfo/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
         end,
@@ -84,28 +84,28 @@ require("lazy").setup({
         }
     },
     {
-        "caosystema/nvim-wildcat",
+        "javiorfo/nvim-wildcat",
         lazy = true,
         cmd = { "WildcatRun", "WildcatClean", "WildcatUp", "WildcatInfo" },
-        dependencies = { "caosystema/nvim-popcorn" }
+        dependencies = { "javiorfo/nvim-popcorn" }
     },
     {
-        "caosystema/nvim-soil",
+        "javiorfo/nvim-soil",
         lazy = true,
         ft = "plantuml"
     },
     {
-        "caosystema/nvim-springtime",
+        "javiorfo/nvim-springtime",
         lazy = true,
         cmd = "Springtime",
-        dependencies = { "caosystema/nvim-popcorn" }
+        dependencies = { "javiorfo/nvim-popcorn" }
     },
     {
-        "caosystema/nvim-ship",
+        "javiorfo/nvim-ship",
         lazy = true,
         ft = "ship",
         cmd = { "ShipCreate", "ShipCreateEnv" },
-        dependencies = { "caosystema/nvim-popcorn", "caosystema/nvim-spinetta" },
+        dependencies = { "javiorfo/nvim-popcorn", "javiorfo/nvim-spinetta" },
         config = function()
             require'ship'.setup {
                 response = {
@@ -162,7 +162,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "c", "lua", "go", "rust" },
+        ft = { "lua", "go", "rust" },
         config = function()
             lsp_icons()
           
@@ -171,9 +171,6 @@ require("lazy").setup({
             end
 
             local lsp_config = require'lspconfig'
-        
-            -- C
-            lsp_config.clangd.setup{ on_attach = on_attach }
         
             -- Go
             lsp_config.gopls.setup{ on_attach = on_attach }
