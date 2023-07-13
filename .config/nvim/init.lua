@@ -45,14 +45,14 @@ end
   
 require("lazy").setup({
     {
-        "progrimorio/nvim-nyctophilia",
+        "javiorfo/nvim-nyctophilia",
         lazy = false,
         config = function()
             vim.cmd[[colorscheme umbra]]
         end
     },
     {
-        "progrimorio/nvim-minimaline",
+        "javiorfo/nvim-minimaline",
         lazy = false,
         config = function()
             require'minimaline'.setup{
@@ -62,19 +62,19 @@ require("lazy").setup({
         end
     },
     {
-        "progrimorio/nvim-hemingway",
+        "javiorfo/nvim-hemingway",
         lazy = true,
-        dependencies = { "progrimorio/nvim-popcorn" },
+        dependencies = { "javiorfo/nvim-popcorn" },
         keys = {
             { "<leader>co", "<Plug>HemingwayComment" },
             { "<leader>co", "<Plug>HemingwayMultiComment", mode = "v" },
         }
     },
     {
-        "progrimorio/nvim-fuel",
+        "javiorfo/nvim-fuel",
         lazy = true,
         ft = { "java", "lua", "go", "rust" },
-        dependencies = { "progrimorio/nvim-popcorn" },
+        dependencies = { "javiorfo/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
         end,
@@ -84,28 +84,28 @@ require("lazy").setup({
         }
     },
     {
-        "progrimorio/nvim-wildcat",
+        "javiorfo/nvim-wildcat",
         lazy = true,
         cmd = { "WildcatRun", "WildcatClean", "WildcatUp", "WildcatInfo" },
-        dependencies = { "progrimorio/nvim-popcorn" }
+        dependencies = { "javiorfo/nvim-popcorn" }
     },
     {
-        "progrimorio/nvim-soil",
+        "javiorfo/nvim-soil",
         lazy = true,
         ft = "plantuml"
     },
     {
-        "progrimorio/nvim-springtime",
+        "javiorfo/nvim-springtime",
         lazy = true,
         cmd = "Springtime",
-        dependencies = { "progrimorio/nvim-popcorn" }
+        dependencies = { "javiorfo/nvim-popcorn" }
     },
     {
-        "progrimorio/nvim-ship",
+        "javiorfo/nvim-ship",
         lazy = true,
         ft = "ship",
         cmd = { "ShipCreate", "ShipCreateEnv" },
-        dependencies = { "progrimorio/nvim-popcorn", "progrimorio/nvim-spinetta" },
+        dependencies = { "javiorfo/nvim-popcorn", "javiorfo/nvim-spinetta" },
         config = function()
             require'ship'.setup {
                 response = {
