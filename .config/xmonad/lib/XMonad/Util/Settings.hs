@@ -1,4 +1,4 @@
--- Author: Progrimorio
+-- Author: Javier Orfo
 
 module XMonad.Util.Settings
     ( terminal
