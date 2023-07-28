@@ -1,4 +1,4 @@
-vim.g.mapleader = " "
+Rust (Rocket, Actix, Diesel)vim.g.mapleader = " "
 
 vim.opt.number = true
 vim.opt.autoindent = true
@@ -73,7 +73,7 @@ require("lazy").setup({
     {
         "javiorfo/nvim-fuel",
         lazy = true,
-        ft = { "java", "lua", "go", "rust" },
+        ft = { "c", "java", "lua", "go", "kotlin" },
         dependencies = { "javiorfo/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
@@ -162,7 +162,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "lua", "go", "rust" },
+        ft = { "c", "lua", "go", "kotlin" },
         config = function()
             lsp_icons()
           
@@ -171,12 +171,18 @@ require("lazy").setup({
             end
 
             local lsp_config = require'lspconfig'
+
+            -- C
+            lsp_config.clangd.setup{ on_attach = on_attach }
         
             -- Go
             lsp_config.gopls.setup{ on_attach = on_attach }
-        
-            -- Rust
-            lsp_config.rust_analyzer.setup{ on_attach = on_attach }
+
+            -- Kotlin
+            lsp_config.kotlin_language_server.setup {
+                on_attach = on_attach,
+                root_dir = lsp_config.util.root_pattern("settings.gradle", "settings.gradle.kts", "pom.xml");
+            }
 
             -- Lua
             lsp_config.lua_ls.setup {
