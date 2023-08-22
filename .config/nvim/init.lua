@@ -73,7 +73,7 @@ require("lazy").setup({
     {
         "javiorfo/nvim-fuel",
         lazy = true,
-        ft = { "c", "java", "lua", "go", "kotlin" },
+        ft = { "c", "java", "lua", "go", "kotlin", "rust" },
         dependencies = { "javiorfo/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
@@ -162,7 +162,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "c", "lua", "go", "kotlin" },
+        ft = { "c", "lua", "go", "kotlin", "rust" },
         config = function()
             lsp_icons()
           
@@ -183,6 +183,9 @@ require("lazy").setup({
                 on_attach = on_attach,
                 root_dir = lsp_config.util.root_pattern("settings.gradle", "settings.gradle.kts", "pom.xml");
             }
+
+            -- Rust
+            lsp_config.rust_analyzer.setup{ on_attach = on_attach }
 
             -- Lua
             lsp_config.lua_ls.setup {
