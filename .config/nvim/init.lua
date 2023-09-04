@@ -17,6 +17,7 @@ vim.opt.cursorline = true
 vim.opt.cursorlineopt = "number"
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+vim.opt.showmode = false
 
 -- Mappings
 local opts = { noremap = true, silent = true }
