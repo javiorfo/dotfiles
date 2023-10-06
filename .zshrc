@@ -5,7 +5,7 @@ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export M2_HOME=/opt/maven
 # Path
 export PATH=$PATH:$JAVA_HOME/bin:$M2_HOME/bin
-export GITHUB=https://token@github.com/caosystema/
+export GITHUB=https://token@github.com/orfosys/
 
 # Editor
 export EDITOR="nvim"
