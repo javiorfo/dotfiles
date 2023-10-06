@@ -47,14 +47,14 @@ end
   
 require("lazy").setup({
     {
-        "javiorfo/nvim-nyctophilia",
+        "orfosys/nvim-nyctophilia",
         lazy = false,
         config = function()
             vim.cmd[[colorscheme umbra]]
         end
     },
     {
-        "javiorfo/nvim-minimaline",
+        "orfosys/nvim-minimaline",
         lazy = false,
         config = function()
             require'minimaline'.setup{
@@ -64,19 +64,19 @@ require("lazy").setup({
         end
     },
     {
-        "javiorfo/nvim-hemingway",
+        "orfosys/nvim-hemingway",
         lazy = true,
-        dependencies = { "javiorfo/nvim-popcorn" },
+        dependencies = { "orfosys/nvim-popcorn" },
         keys = {
             { "<leader>co", "<Plug>HemingwayComment" },
             { "<leader>co", "<Plug>HemingwayMultiComment", mode = "v" },
         }
     },
     {
-        "javiorfo/nvim-fuel",
+        "orfosys/nvim-fuel",
         lazy = true,
         ft = { "c", "java", "lua", "go", "kotlin", "rust" },
-        dependencies = { "javiorfo/nvim-popcorn" },
+        dependencies = { "orfosys/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
         end,
@@ -86,28 +86,28 @@ require("lazy").setup({
         }
     },
     {
-        "javiorfo/nvim-wildcat",
+        "orfosys/nvim-wildcat",
         lazy = true,
         cmd = { "WildcatRun", "WildcatClean", "WildcatUp", "WildcatInfo" },
-        dependencies = { "javiorfo/nvim-popcorn" }
+        dependencies = { "orfosys/nvim-popcorn" }
     },
     {
-        "javiorfo/nvim-soil",
+        "orfosys/nvim-soil",
         lazy = true,
         ft = "plantuml"
     },
     {
-        "javiorfo/nvim-springtime",
+        "orfosys/nvim-springtime",
         lazy = true,
         cmd = "Springtime",
-        dependencies = { "javiorfo/nvim-popcorn" }
+        dependencies = { "orfosys/nvim-popcorn" }
     },
     {
-        "javiorfo/nvim-ship",
+        "orfosys/nvim-ship",
         lazy = true,
         ft = "ship",
         cmd = { "ShipCreate", "ShipCreateEnv" },
-        dependencies = { "javiorfo/nvim-popcorn", "javiorfo/nvim-spinetta" },
+        dependencies = { "orfosys/nvim-popcorn", "orfosys/nvim-spinetta" },
         config = function()
             require'ship'.setup {
                 response = {
