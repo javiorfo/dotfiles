@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Author: Orfosys
+# Author: Mr. Charkuils
 
 sudo pacman -S --needed xmonad xmonad-contrib xmobar pamixer xautolock pulseaudio-alsa feh alacritty ttf-ubuntu-mono-nerd
 
