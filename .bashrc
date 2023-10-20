@@ -1,13 +1,13 @@
 # ENV
 # Java
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 # Maven
 export M2_HOME=/opt/maven
 # Go
 export GOPATH=$HOME/Documentos/go
 # Path
 export PATH=$PATH:$JAVA_HOME/bin:$M2_HOME/bin:$GOPATH/bin
-export GITHUB=https://token@github.com/orfosys/
+export GITHUB=https://token@github.com/charkuils/
 
 # Git
 function git_branch(){                                                                                                 
