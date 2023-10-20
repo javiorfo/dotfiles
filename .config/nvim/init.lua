@@ -1,4 +1,4 @@
-Rust (Rocket, Actix, Diesel)vim.g.mapleader = " "
+vim.g.mapleader = " "
 
 vim.opt.number = true
 vim.opt.autoindent = true
