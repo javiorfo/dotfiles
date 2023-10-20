@@ -1,6 +1,6 @@
 local home = os.getenv("HOME")
--- local jdk = '/usr/lib/jvm/java-11-openjdk/bin/java'
-local jdk = '/usr/lib/jvm/java-17-openjdk/bin/java'
+-- local jdk = '/usr/lib/jvm/java-17-openjdk/bin/java'
+local jdk = '/usr/lib/jvm/java-21-openjdk/bin/java'
 
 local signs = { Error = "", Warn = "", Hint = "", Info = "" }
 for type, icon in pairs(signs) do
