@@ -1,4 +1,4 @@
--- Author: Orfosys
+-- Author: Mr. Charkuils
 
 module XMonad.Util.Settings
     ( terminal
