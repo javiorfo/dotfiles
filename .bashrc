@@ -7,7 +7,7 @@ export M2_HOME=/opt/maven
 export GOPATH=$HOME/Documentos/go
 # Path
 export PATH=$PATH:$JAVA_HOME/bin:$M2_HOME/bin:$GOPATH/bin
-export GITHUB=https://token@github.com/charkuils/
+export GITHUB=https://token@github.com/javiorfo/
 
 # Git
 function git_branch(){                                                                                                 
