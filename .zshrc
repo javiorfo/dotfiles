@@ -60,4 +60,5 @@ alias ls='exa --icons --group-directories-first'
 alias grep='grep --color=auto'
 
 # Prompt
-PROMPT="%F{240}%{$reset_color%}  %B%F{245}%~%{$reset_color%}%b %F{15}\$(git_branch)%{$reset_color%}%F{240}󰁕%{$reset_color%} "
+TERM_LOGO=
+PROMPT="%F{240}%{$reset_color%}$TERM_LOGO  %B%F{245}%~%{$reset_color%}%b %F{15}\$(git_branch)%{$reset_color%}%F{240}󰁕%{$reset_color%} "
