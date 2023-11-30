@@ -53,13 +53,24 @@ require("lazy").setup({
             vim.cmd[[colorscheme umbra]]
         end
     },
-    {
+--[[     {
         "javiorfo/nvim-minimaline",
         lazy = false,
         config = function()
             require'minimaline'.setup{
                 disabled_filetypes = { "NvimTree*" },
                 lsp_colors_enabled = true
+            }
+        end
+    }, ]]
+    {
+        "nvim-lualine/lualine.nvim",
+        lazy = false,
+        config = function()
+            require'lualine'.setup {
+                options = {
+                    disabled_filetypes = { 'NvimTree' }
+                }
             }
         end
     },
