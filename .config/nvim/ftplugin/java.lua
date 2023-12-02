@@ -22,7 +22,7 @@ local config = {
     '--add-modules=ALL-SYSTEM',
     '--add-opens', 'java.base/java.util=ALL-UNNAMED',
     '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
-    '-jar', home .. '/.config/nvim/servers/jdtls/plugins/org.eclipse.equinox.launcher_1.6.500.v20230622-2056.jar',
+    '-jar', home .. '/.config/nvim/servers/jdtls/plugins/org.eclipse.equinox.launcher_1.6.600.v20231012-1237.jar',
     '-configuration', home .. '/.config/nvim/servers/jdtls/config_linux',
     '-data', home .. '/Documentos/java'
   },
