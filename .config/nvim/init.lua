@@ -86,7 +86,7 @@ require("lazy").setup({
     {
         "javiorfo/nvim-fuel",
         lazy = true,
-        ft = { "c", "java", "lua", "go", "kotlin", "rust" },
+        ft = { "c", "haskell", "java", "lua", "go", "kotlin", "rust" },
         dependencies = { "javiorfo/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
@@ -175,7 +175,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "c", "lua", "go", "kotlin", "rust" },
+        ft = { "c", "haskell", "lua", "go", "kotlin", "rust" },
         config = function()
             lsp_icons()
           
@@ -187,6 +187,9 @@ require("lazy").setup({
 
             -- C
             lsp_config.clangd.setup{ on_attach = on_attach }
+        
+            -- Haskell
+            lsp_config.hls.setup{ on_attach = on_attach }
         
             -- Go
             lsp_config.gopls.setup{ on_attach = on_attach }
