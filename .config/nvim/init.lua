@@ -221,6 +221,7 @@ require("lazy").setup({
             { 'K',          '<cmd>lua vim.lsp.buf.hover()<CR>' },
             { 'gi',         '<cmd>lua vim.lsp.buf.implementation()<CR>' },
             { '<C-k>',      '<cmd>lua vim.lsp.buf.signature_help()<CR>' },
+            { '<leader>e',  '<cmd>lua vim.diagnostic.open_float()<CR>' },
             { '<leader>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>' },
             { '<leader>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>' },
             { '<leader>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>' },
