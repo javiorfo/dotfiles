@@ -195,7 +195,14 @@ require("lazy").setup({
             }
 
             -- Rust
-            lsp_config.rust_analyzer.setup{ on_attach = on_attach }
+            lsp_config.rust_analyzer.setup { 
+                on_attach = on_attach,
+                settings = {
+                    ["rust-analyzer"] = {
+                        checkOnSave = { command = "clippy" }
+                    }
+                }
+            }
 
             -- Lua
             lsp_config.lua_ls.setup {
