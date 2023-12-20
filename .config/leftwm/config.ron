@@ -53,9 +53,9 @@
     keybind: [
         // Apps
         (command: Execute,                value: "dmenu_run",            modifier: ["modkey"],            key: "p"),
-        (command: Execute,                value: "alacritty -e joshuto", modifier: ["modkey"],            key: "t"),
+        (command: Execute,                value: "thunar",               modifier: ["modkey"],            key: "t"),
         (command: Execute,                value: "alacritty",            modifier: ["modkey"],            key: "Return"),
-        (command: Execute,                value: "brave",                modifier: ["modkey"],            key: "b"),
+        (command: Execute,                value: "firefox",               modifier: ["modkey"],            key: "b"),
         
         // Windows
         (command: CloseWindow,            value: "",                     modifier: ["modkey", "Shift"],   key: "c"),
@@ -72,10 +72,9 @@
         
         // System
         (command: SoftReload,             value: "",                     modifier: ["modkey", "Shift"],   key: "r"),
-        (command: HardReload,             value: "",                     modifier: ["modkey", "Control"], key: "r"),
+        (command: HardReload,             value: "shutdown -r now",      modifier: ["modkey", "Control"], key: "r"),
         (command: Execute,                value: "pkill leftwm",         modifier: ["modkey", "Shift"],   key: "q"),
         (command: Execute,                value: "shutdown now",         modifier: ["modkey", "Shift"],   key: "s"),
-        (command: Execute,                value: "slock",                modifier: ["modkey", "Control"], key: "l"),
 
         // Tag Control
         (command: GotoTag,                value: "1",                    modifier: ["modkey"],            key: "1"),
