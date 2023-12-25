@@ -53,7 +53,7 @@ require("lazy").setup({
             vim.cmd[[colorscheme umbra]]
         end
     },
---[[     {
+    {
         "javiorfo/nvim-minimaline",
         lazy = false,
         config = function()
@@ -62,8 +62,8 @@ require("lazy").setup({
                 lsp_colors_enabled = true
             }
         end
-    }, ]]
-    {
+    },
+--[[        {
         "nvim-lualine/lualine.nvim",
         lazy = false,
         config = function()
@@ -73,7 +73,7 @@ require("lazy").setup({
                 }
             }
         end
-    },
+    }, ]]
     {
         "javiorfo/nvim-hemingway",
         lazy = true,
