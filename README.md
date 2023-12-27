@@ -4,7 +4,7 @@
 - [Bash](https://github.com/javiorfo/dotfiles/blob/master/.bashrc)
 - [Helix](https://github.com/javiorfo/dotfiles/blob/master/.config/helix)
 - [Joshuto](https://github.com/javiorfo/dotfiles/blob/master/.config/joshuto)
-- [Leftwm](https://github.com/javiorfo/dotfiles/blob/master/.config/leftwm)
+- [Leftwm](https://github.com/javiorfo/leftwm)
 - [Mutt](https://github.com/javiorfo/odotfiles/blob/master/.mutt)
 - [Neovim](https://github.com/javiorfo/nvim)
 - [Polybar](https://github.com/javiorfo/dotfiles/blob/master/.config/leftwm/themes/current/polybar.config)
