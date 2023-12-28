@@ -1,0 +1,28 @@
+[colors]
+# background = "#1d1f21"
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 10.0
+
+[font.bold]
+family = "Iosevka NF"
+style = "Bold"
+
+[font.bold_italic]
+family = "Iosevka NF"
+style = "Bold Italic"
+
+[font.italic]
+family = "Iosevka NF"
+style = "Italic"
+
+[font.normal]
+family = "Iosevka NF"
+style = "Regular"
+
+[window]
+decorations = "full"
+dynamic_padding = true
