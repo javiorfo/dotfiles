@@ -75,7 +75,7 @@ require("lazy").setup({
     {
         "javiorfo/nvim-fuel",
         lazy = true,
-        ft = { "java", "lua", "kotlin", "rust" },
+        ft = { "java", "lua", "go", "rust" },
         dependencies = { "javiorfo/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
@@ -178,7 +178,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "lua", "kotlin", "rust" },
+        ft = { "lua", "go", "rust" },
         config = function()
             lsp_icons()
           
@@ -188,15 +188,9 @@ require("lazy").setup({
 
             local lsp_config = require'lspconfig'
             
-            -- Kotlin
-            lsp_config.kotlin_language_server.setup {
-                on_attach = on_attach,
-                settings = {
-                    kotlin = {
-                        jvm = { target = "17" }
-                    }
-                }  
-                -- root_dir = lsp_config.util.root_pattern("gradle.build", "pom.xml");
+            -- Go
+            lsp_config.gopls.setup {
+                on_attach = on_attach
             }
 
             -- Rust
