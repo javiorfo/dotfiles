@@ -75,7 +75,7 @@ require("lazy").setup({
     {
         "javiorfo/nvim-fuel",
         lazy = true,
-        ft = { "java", "lua", "go", "rust" },
+        ft = { "go", "java", "kotlin", "lua", "rust" },
         dependencies = { "javiorfo/nvim-popcorn" },
         config = function()
             require'fuel'.setup { popup = true }
@@ -178,9 +178,10 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         lazy = true,
-        ft = { "lua", "go", "rust" },
+        ft = { "go", "kotlin", "lua", "rust" },
         config = function()
             lsp_icons()
+            local home = os.getenv("HOME")
           
             local on_attach = function(client, _)
                 client.server_capabilities.semanticTokensProvider = nil
@@ -189,8 +190,20 @@ require("lazy").setup({
             local lsp_config = require'lspconfig'
             
             -- Go
-            lsp_config.gopls.setup {
-                on_attach = on_attach
+            lsp_config.gopls.setup { on_attach = on_attach }
+
+            -- Kotlin
+            lsp_config.kotlin_language_server.setup {
+                cmd = { home .. "/.config/nvim/servers/kotlin-language-server/server/build/install/server/bin/kotlin-language-server" },
+                on_attach = on_attach,
+                settings = {
+                    kotlin = {
+                        compiler = {
+                            jvm = { target = "17" }
+                        }
+                    }
+                },
+--                 root_dir = lsp_config.util.root_pattern("gradle.build", "pom.xml", "*.kt");
             }
 
             -- Rust
