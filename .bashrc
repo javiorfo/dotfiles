@@ -32,7 +32,6 @@ alias ls='ls --color=auto --group-directories-first'
 alias gs='git status'
 alias ga='git add .'
 alias gc='git commit -m $1'
-# alias ls='exa --icons --group-directories-first'
 alias grep='grep --color=auto'
 
 PS1="\[\033[34m\]\[\033[1;37m\]  \[\e[1;36m\] \w \[\e[1;90m\]\$(git_branch)󰁕\[\e[0;37m\] "
