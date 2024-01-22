@@ -172,6 +172,7 @@ require("lazy").setup({
             { "<leader>fh", "<cmd>Telescope help_tags<cr>" },
             { '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>' },
             { "gr",         "<cmd>lua require'telescope.builtin'.lsp_references()<cr>" },
+            { "gi",         "<cmd>lua require'telescope.builtin'.lsp_implementations()<cr>" },
             { "<leader>di", "<cmd>lua require'telescope.builtin'.diagnostics()<cr>" }
         }
     },
@@ -238,7 +239,6 @@ require("lazy").setup({
             { 'gD',         '<cmd>lua vim.lsp.buf.declaration()<CR>' },
             { 'gd',         '<cmd>lua vim.lsp.buf.definition()<CR>' },
             { 'K',          '<cmd>lua vim.lsp.buf.hover()<CR>' },
-            { 'gi',         '<cmd>lua vim.lsp.buf.implementation()<CR>' },
             { '<C-k>',      '<cmd>lua vim.lsp.buf.signature_help()<CR>' },
             { '<leader>e',  '<cmd>lua vim.diagnostic.open_float()<CR>' },
             { '<leader>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>' },
