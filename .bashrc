@@ -33,6 +33,7 @@ set -o vi
 
 # ALIASES
 alias ls='ls --color=auto --group-directories-first'
+alias git='LANG=en_US git'
 alias gs='git status'
 alias ga='git add .'
 alias gc='git commit -m $1'
