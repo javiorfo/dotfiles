@@ -6,6 +6,7 @@ export M2_HOME=/opt/maven
 # Path
 export PATH=$PATH:$JAVA_HOME/bin:$M2_HOME/bin
 export GITHUB=https://token@github.com/javiorfo/
+export LANG=en
 
 # Editor
 export EDITOR="nvim"
@@ -53,7 +54,6 @@ bindkey -v
 
 # Alias
 # alias ls='ls --color=auto'
-alias git='LANG=en_US git'
 alias gs='git status'
 alias ga='git add .'
 alias gc='git commit -m $1'
