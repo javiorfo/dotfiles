@@ -7,6 +7,7 @@ export PATH=$JAVA_HOME/bin:$M2_HOME/bin:$PATH
 export GITHUB=https://token@github.com/javiorfo/
 export LS_COLORS="fi=37:di=01;90:ex=93:ln=37:or=37:mi=00:mh=37\
 :pi=37:so=37;30:do=37:bd=37:cd=37:su=37:sg=37:ca=37:tw=37:ow=37:st=37"
+export LANG=en
 
 # EDITOR
 export EDITOR="nvim"
@@ -33,7 +34,6 @@ set -o vi
 
 # ALIASES
 alias ls='ls --color=auto --group-directories-first'
-alias git='LANG=en_US git'
 alias gs='git status'
 alias ga='git add .'
 alias gc='git commit -m $1'
