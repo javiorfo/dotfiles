@@ -183,6 +183,8 @@ require("lazy").setup({
         config = function()
             lsp_icons()
             local home = os.getenv("HOME")
+            local capabilities = vim.lsp.protocol.make_client_capabilities()
+            capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
           
             local on_attach = function(client, _)
                 client.server_capabilities.semanticTokensProvider = nil
@@ -191,12 +193,16 @@ require("lazy").setup({
             local lsp_config = require'lspconfig'
             
             -- Go
-            lsp_config.gopls.setup { on_attach = on_attach }
+            lsp_config.gopls.setup {
+                on_attach = on_attach,
+                capabilities = capabilities
+            }
 
             -- Kotlin
             lsp_config.kotlin_language_server.setup {
                 cmd = { home .. "/.config/nvim/servers/kotlin-language-server/server/build/install/server/bin/kotlin-language-server" },
                 on_attach = on_attach,
+                capabilities = capabilities,
                 settings = {
                     kotlin = {
                         compiler = {
@@ -210,6 +216,7 @@ require("lazy").setup({
             -- Rust
             lsp_config.rust_analyzer.setup {
                 on_attach = on_attach,
+                capabilities = capabilities,
                 settings = {
                     ["rust-analyzer"] = {
                         checkOnSave = { command = "clippy" }
@@ -220,6 +227,7 @@ require("lazy").setup({
             -- Lua
             lsp_config.lua_ls.setup {
                 on_attach = on_attach,
+                capabilities = capabilities,
                 settings = {
                     Lua = {
                         runtime = {
@@ -301,6 +309,14 @@ require("lazy").setup({
                 { name = 'nvim_lsp' },
                 { name = 'luasnip' },
               },
+              window = {
+                  completion = cmp.config.window.bordered({
+                      winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None"
+                  }),
+                  documentation = cmp.config.window.bordered({
+                      winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None"
+                  })
+              }
             }
         end
     },
