@@ -200,7 +200,6 @@ require("lazy").setup({
 
             -- Kotlin
             lsp_config.kotlin_language_server.setup {
-                cmd = { home .. "/.config/nvim/servers/kotlin-language-server/server/build/install/server/bin/kotlin-language-server" },
                 on_attach = on_attach,
                 capabilities = capabilities,
                 settings = {
@@ -210,7 +209,6 @@ require("lazy").setup({
                         }
                     }
                 },
---                 root_dir = lsp_config.util.root_pattern("gradle.build", "pom.xml", "*.kt");
             }
 
             -- Rust
