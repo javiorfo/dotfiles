@@ -2,7 +2,8 @@
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export M2_HOME=/opt/maven
 
-export GOPATH=/home/javier/dev/go
+# export GOPATH=/home/javier/dev/go
+# export GOTELEMETRY=off
 
 export PATH=$JAVA_HOME/bin:$M2_HOME/bin:$PATH
 
