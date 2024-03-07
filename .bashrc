@@ -1,17 +1,19 @@
-# ENVIRONMENT VARIABLES
+# JAVA
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export M2_HOME=/opt/maven
 
-# export GOPATH=/home/javier/dev/go
-# export GOTELEMETRY=off
+# GO
+export GOPATH=/home/javier/dev/go
+export GOTELEMETRY=off
 
+# PATH
 export PATH=$JAVA_HOME/bin:$M2_HOME/bin:$PATH
 
-export GITHUB=https://token@github.com/javiorfo/
-
+# COLORS
 export LS_COLORS="fi=37:di=01;90:ex=93:ln=37:or=37:mi=00:mh=37\
 :pi=37:so=37;30:do=37:bd=37:cd=37:su=37:sg=37:ca=37:tw=37:ow=37:st=37"
 
+# LANG
 export LANG=en
 
 # EDITOR
@@ -19,6 +21,8 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 # GIT
+export GITHUB=https://token@github.com/javiorfo/
+
 function git_branch(){
     ref=$(git symbolic-ref --short --quiet HEAD 2>/dev/null)
     if [ -n "${ref}" ]; then
