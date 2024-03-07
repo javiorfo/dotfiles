@@ -1,5 +1,6 @@
 # JAVA
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+# export JAVA_HOME=/usr/lib/jvm/java-21-graalvm-ee
 export M2_HOME=/opt/maven
 
 # GO
