@@ -5,7 +5,7 @@ export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export M2_HOME=/opt/maven
 # Path
 export PATH=$PATH:$JAVA_HOME/bin:$M2_HOME/bin
-export GITHUB=https://token@github.com/javiorfo/
+export GITHUB=https://token@github.com/orfosys/
 export LANG=en
 
 # Editor
