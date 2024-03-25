@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Author: Javier Orfo
 
 sudo pacman -S --needed dmenu pamixer feh alacritty ttf-iosevka-nerd polybar
 paru -S --needed leftwm lux
