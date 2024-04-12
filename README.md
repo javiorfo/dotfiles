@@ -7,7 +7,7 @@
 - [Joshuto](https://github.com/javiorfo/dotfiles/blob/master/.config/joshuto)
 - [Leftwm](https://github.com/javiorfo/dotfiles/blob/master/.config/leftwm)
 - [Mutt](https://github.com/javiorfo/dotfiles/blob/master/.mutt)
-- [Neovim](https://github.com/javiorfo/dotfiles/blob/master/.config/nvim)
+- [Neovim](https://github.com/javiorfo/nvim)
 - [Polybar](https://github.com/javiorfo/dotfiles/blob/master/.config/leftwm/themes/current/polybar.config)
 - [Qutebrowser](https://github.com/javiorfo/dotfiles/blob/master/.config/qutebrowser)
 - [Vim](https://github.com/javiorfo/dotfiles/blob/master/.vimrc)
