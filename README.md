@@ -9,6 +9,7 @@
 - [Mutt](https://github.com/javiorfo/dotfiles/blob/master/.mutt)
 - [Neovim](https://github.com/javiorfo/nvim)
 - [Polybar](https://github.com/javiorfo/dotfiles/blob/master/.config/leftwm/themes/current/polybar.config)
+- [Presenterm](https://github.com/javiorfo/dotfiles/blob/master/.config/presenterm)
 - [Qutebrowser](https://github.com/javiorfo/dotfiles/blob/master/.config/qutebrowser)
 - [Vim](https://github.com/javiorfo/dotfiles/blob/master/.vimrc)
 - [Vieb](https://github.com/javiorfo/dotfiles/blob/master/.config/Vieb)
