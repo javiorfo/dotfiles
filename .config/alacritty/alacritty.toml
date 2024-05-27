@@ -26,3 +26,23 @@ style = "Regular"
 [window]
 decorations = "full"
 dynamic_padding = true
+
+[colors.normal]
+black = "#000000"
+red = "#666666"
+green = "#666666"
+yellow = "#999999"
+blue = "#CCCCCC"
+magenta = "#DDDDDD"
+cyan = "#EEEEEE"
+white = "#FFFFFF"
+
+[colors.bright]
+black = "#595959"
+red = "#666666"
+green = "#999999"
+yellow = "#CCCCCC"
+blue = "#DDDDDD"
+magenta = "#EEEEEE"
+cyan = "#FFFFFF"
+white = "#FFFFFF"
