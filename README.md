@@ -11,6 +11,7 @@
 - [Polybar](https://github.com/javiorfo/dotfiles/blob/master/.config/leftwm/themes/current/polybar.config)
 - [Presenterm](https://github.com/javiorfo/dotfiles/blob/master/.config/presenterm)
 - [Qutebrowser](https://github.com/javiorfo/dotfiles/blob/master/.config/qutebrowser)
+- [Slides](https://github.com/javiorfo/dotfiles/blob/master/.config/slides)
 - [Vim](https://github.com/javiorfo/dotfiles/blob/master/.vimrc)
 - [Vieb](https://github.com/javiorfo/dotfiles/blob/master/.config/Vieb)
 - [XMobar](https://github.com/javiorfo/dotfiles/blob/master/.config/xmobar/xmobar.hs)
