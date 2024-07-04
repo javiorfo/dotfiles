@@ -24,7 +24,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 # GIT
-export GITHUB=https://token@github.com/chaosystema
+export GITHUB=https://token@github.com/javiorfo
 
 function git_branch(){
     ref=$(git symbolic-ref --short --quiet HEAD 2>/dev/null)
