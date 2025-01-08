@@ -16,6 +16,7 @@
 - [Slides](https://github.com/javiorfo/dotfiles/blob/master/.config/slides)
 - [Vim](https://github.com/javiorfo/dotfiles/blob/master/.vimrc)
 - [Vieb](https://github.com/javiorfo/dotfiles/blob/master/.config/Vieb)
+- [X11](https://github.com/javiorfo/dotfiles/blob/master/etc/X11/xorg.conf.d)
 - [XMobar](https://github.com/javiorfo/dotfiles/blob/master/.config/xmobar/xmobar.hs)
 - [XMonad](https://github.com/javiorfo/dotfiles/blob/master/.config/xmonad)
 - [Zathura](https://github.com/javiorfo/dotfiles/blob/master/.config/zathura/zathurarc)
