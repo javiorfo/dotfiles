@@ -1,0 +1,38 @@
+background = "#1d1f21"
+
+font-family = "Iosevka NF"
+font-size = 10.8
+font-thicken = true
+font-feature = -calt 
+font-feature = -liga
+font-feature = -dlig
+
+resize-overlay = never
+
+adjust-underline-thickness = -50%
+
+window-padding-y = 2,0
+window-padding-x = 2,0
+# window-padding-balance = true
+window-decoration = false
+gtk-titlebar = false
+gtk-adwaita = false
+adw-toolbar-style = flat
+
+palette = 0=#000000
+palette = 1=#666666
+palette = 2=#666666
+palette = 3=#999999
+palette = 4=#CCCCCC
+palette = 5=#DDDDDD
+palette = 6=#EEEEEE
+palette = 7=#FFFFFF
+
+palette = 8=#595959
+palette = 9=#666666
+palette = 10=#999999
+palette = 11=#CCCCCC
+palette = 12=#DDDDDD
+palette = 13=#EEEEEE
+palette = 14=#FFFFFF
+palette = 15=#FFFFFF
