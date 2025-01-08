@@ -3,6 +3,7 @@
 - [Alacritty](https://github.com/javiorfo/dotfiles/blob/master/.config/alacritty)
 - [Bash](https://github.com/javiorfo/dotfiles/blob/master/.bashrc)
 - [Cabal](https://github.com/javiorfo/dotfiles/blob/master/.cabal/config)
+- [Ghostty](https://github.com/javiorfo/dotfiles/blob/master/.config/ghostty/config)
 - [Helix](https://github.com/javiorfo/dotfiles/blob/master/.config/helix)
 - [Joshuto](https://github.com/javiorfo/dotfiles/blob/master/.config/joshuto)
 - [Leftwm](https://github.com/javiorfo/dotfiles/blob/master/.config/leftwm)
