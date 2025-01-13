@@ -2,7 +2,7 @@
 feh --bg-scale $HOME/dwm/dwm.jpg &
 
 ## Status Bar
-xtatusbar &
+ztatusbar 2> zt.log &
 
 # suspend
 exec xautolock -time 30 -locker 'sudo systemctl poweroff' -detectsleep &
