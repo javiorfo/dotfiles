@@ -1,5 +1,4 @@
-background = "#1d1f21"
-
+# Font
 font-family = "Iosevka NF"
 font-size = 10.8
 font-thicken = true
@@ -7,18 +6,23 @@ font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
 
+# Mouse
+shell-integration-features = no-cursor
+cursor-style = block
+
+# Window
 resize-overlay = never
-
 adjust-underline-thickness = -50%
-
-window-padding-y = 2,0
-window-padding-x = 2,0
-# window-padding-balance = true
+window-padding-y = 2
+window-padding-x = 2
+window-padding-balance = true
 window-decoration = false
 gtk-titlebar = false
 gtk-adwaita = false
 adw-toolbar-style = flat
 
+# Color
+background = "#1d1f21"
 palette = 0=#000000
 palette = 1=#666666
 palette = 2=#666666
