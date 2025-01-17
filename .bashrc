@@ -5,7 +5,6 @@ export JAVA_WORKSPACE=$HOME/dev/java
 export M2_HOME=/opt/maven
 
 # GO
-export GOPATH=$HOME/dev/go
 export GOTELEMETRY=off
 
 # PATH
@@ -16,7 +15,7 @@ export LS_COLORS="fi=37:di=01;90:ex=33:ln=37:or=37:mi=00:mh=37\
 :pi=37:so=37;30:do=37:bd=37:cd=37:su=37:sg=37:ca=37:tw=37:ow=37:st=37"
 
 # LANG
-export LANG=en
+# export LANG=en
 
 # EDITOR
 export SUDO_EDITOR="nvim"
