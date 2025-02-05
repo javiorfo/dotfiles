@@ -19,6 +19,7 @@
 - [X11](https://github.com/javiorfo/dotfiles/blob/master/etc/X11/xorg.conf.d)
 - [XMobar](https://github.com/javiorfo/dotfiles/blob/master/.config/xmobar/xmobar.hs)
 - [XMonad](https://github.com/javiorfo/dotfiles/blob/master/.config/xmonad)
+- [Yazi](https://github.com/javiorfo/dotfiles/blob/master/.config/yazi)
 - [Zathura](https://github.com/javiorfo/dotfiles/blob/master/.config/zathura/zathurarc)
 - [Zsh](https://github.com/javiorfo/dotfiles/blob/master/.zshrc)
 
