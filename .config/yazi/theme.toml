@@ -1,0 +1,30 @@
+[manager]
+cwd = { fg = "#808080" }
+hovered         = { fg = "#121212", bg = "#444444" }
+preview_hovered = { underline = true }
+
+border_symbol = "│"
+border_style  = { fg = "#665c54" }
+
+
+[status]
+separator_open = ""
+separator_close = ""
+separator_style = { fg = "#3c3836", bg = "#3c3836" }
+
+
+[mode]
+normal_main = { fg = "#808080", bg = "#1C1C1C", bold = true }
+normal_alt = { fg = "#808080", bg = "#262626", bold = true }
+
+select_main = { fg = "#808080", bg = "#262626", bold = true }
+select_alt = { fg = "#808080", bg = "#262626", bold = true }
+
+unset_main  = { fg = "#808080", bg = "#262626", bold = true }
+unset_alt  = { fg = "#808080", bg = "#262626", bold = true }
+
+
+[filetype]
+rules = [
+    { name = "*/", fg = "#808080" }
+]
