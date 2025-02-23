@@ -40,6 +40,12 @@ cmd open &{{
 	esac
 }}
 
+# ctpv preview
+set previewer ctpv
+set cleaner ctpvclear
+&ctpv -s $id
+&ctpvquit $id
+
 # Bindings
 map c
 map d
