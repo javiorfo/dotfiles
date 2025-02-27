@@ -8,17 +8,8 @@ set drawbox true
 set shell bash
 # set cursorpreviewfmt "\033[7;2m"
 
-cmd mkdir ${{
-    printf "Dir name: "
-    read ans
-    mkdir $ans
-}}
-
-cmd mkfile ${{
-    printf "File name: "
-    read ans
-    $EDITOR $ans
-}}
+cmd mkfile $touch $*
+cmd mkdir $mkdir $*
 
 # Archive bindings
 cmd unarchive ${{
@@ -61,7 +52,7 @@ map x cut
 map y copy
 map <enter> open
 map R reload
-map mf mkfile
-map md mkdir
+map mf push :mkfile<space>
+map md push :mkdir<space>
 map C clear
 map r rename
