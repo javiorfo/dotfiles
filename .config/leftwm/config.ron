@@ -47,15 +47,17 @@
     disable_current_tag_swap: false,
     disable_tile_drag: false,
     disable_window_snap: true,
-    focus_behaviour: ClickTo,
+    focus_behaviour: Sloppy,
     focus_new_windows: true,
     sloppy_mouse_follows_focus: true,
+    single_window_border: false,
     keybind: [
         // Apps
         (command: Execute,                value: "dmenu_run",            modifier: ["modkey"],            key: "p"),
-        (command: Execute,                value: "thunar",               modifier: ["modkey"],            key: "t"),
+        (command: Execute,                value: "alacritty -e yazi",    modifier: ["modkey"],            key: "t"),
         (command: Execute,                value: "alacritty",            modifier: ["modkey"],            key: "Return"),
-        (command: Execute,                value: "firefox",               modifier: ["modkey"],            key: "b"),
+        (command: Execute,                value: "firefox",              modifier: ["modkey"],            key: "b"),
+        (command: Execute,                value: "zathura",              modifier: ["modkey"],            key: "z"),
         
         // Windows
         (command: CloseWindow,            value: "",                     modifier: ["modkey", "Shift"],   key: "c"),
@@ -89,13 +91,13 @@
         (command: MoveToTag,              value: "5",                    modifier: ["modkey", "Shift"],   key: "5"),
         
         // Volume Control
-        (command: Execute,                value: "pamixer -i 1",         modifier: [],                    key: "XF86XK_AudioRaiseVolume" ),
-        (command: Execute,                value: "pamixer -d 1",         modifier: [],                    key: "XF86XK_AudioLowerVolume" ),
-        (command: Execute,                value: "pamixer -t",           modifier: [],                    key: "XF86XK_AudioMute" ),
+        (command: Execute,                value: "pactl set-sink-volume @DEFAULT_SINK@ +1%",         modifier: [],                    key: "XF86XK_AudioRaiseVolume" ),
+        (command: Execute,                value: "pactl set-sink-volume @DEFAULT_SINK@ -1%",         modifier: [],                    key: "XF86XK_AudioLowerVolume" ),
+        (command: Execute,                value: "pactl set-sink-mute @DEFAULT_SINK@ toggle",        modifier: [],                    key: "XF86XK_AudioMute" ),
 
         // Brightness Control
-        //(command: Execute,              value: "lux -a 10%",           modifier: [],                    key: "XF86XK_MonBrightnessUp" ),
-        //(command: Execute,              value: "lux -s 10%",           modifier: [],                    key: "XF86XK_MonBrightnessDown" ),
+        //(command: Execute,              value: "brightnessctl set 10%+",           modifier: [],                    key: "XF86XK_MonBrightnessUp" ),
+        //(command: Execute,              value: "brightnessctl set 10%-",           modifier: [],                    key: "XF86XK_MonBrightnessDown" ),
     ],
     state_path: None,
 )
