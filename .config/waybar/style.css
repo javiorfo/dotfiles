@@ -1,1 +1,145 @@
+* {
+    font-family: "Iosevka Nerd Font";
+/*     font-weight: bold; */
+    font-size: 14px;
+    color: #bbbbbb;
+}
 
+window#waybar {
+    background-color: transparent;
+    color: #cdd6f4;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+#workspaces {
+    background-color: #1e1e2e;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+}
+
+#workspaces button {
+    margin: 0 0px;
+    padding: 0 0px;
+    background-color: transparent;
+    min-width: 20px;
+}
+
+#workspaces button:hover {
+    background: transparent;
+}
+
+#workspaces button.active {
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    color: #eb4d4b;
+}
+
+#mode {
+    background-color: #64727d;
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#mode,
+#scratchpad {
+    background-color: #222222;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+}
+
+#custom-vkeyboard {
+    margin: 4px 0px 4px 0px;
+    background-color: #1e1e2e;
+    border-radius: 15px;
+    padding: 0 10px 0 12px;
+
+}
+
+#window,
+
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+
+#custom-notification:hover,
+#custom-vkeyboard:hover,
+#idle_inhibitor:hover,
+#custom-power:hover,
+#custom-launcher:hover,
+#mpris:hover,
+#workspaces:hover,
+#privacy:hover,
+#tray:hover,
+#battery:hover,
+#custom-clipboard:hover,
+#battery.charging:hover,
+#pulseaudio:hover,
+#backlight:hover,
+#clock:hover {
+    transition: all 0.3s ease-in;
+    text-shadow: 0 0 2px #c9cdff;
+}
+
+#battery.charging,
+#battery.plugged {
+    background-color: #1e1e2e;
+    border-radius: 15px;
+    padding: 0 10px 0 10px;
+}
+
+@keyframes blink {
+    to {
+        color: #f53c3c;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: #b4befe;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: #1e1e2e;
+}
+
+#battery.warning:not(.charging) {
+    color: orange;
+    background-color: #1e1e2e;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#network {
+    padding: 7px;
+}
+
+#network.disconnected {
+    color: #eb4d4b;
+}
+
+#pulseaudio.muted {
+    color: #eb4d4b;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
