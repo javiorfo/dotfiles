@@ -42,7 +42,7 @@
         "format": "  {}%"
     },
     "temperature": {
-        "thermal-zone": 0,
+        "thermal-zone": 2,
         "critical-threshold": 80,
         "format": "{icon} {temperatureC}°C",
         "format-icons": ["", "", ""]
