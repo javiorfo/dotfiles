@@ -24,7 +24,7 @@ family = "Iosevka NF"
 style = "Regular"
 
 [window]
-decorations = "full"
+decorations = "None"
 dynamic_padding = true
 
 [colors.normal]
