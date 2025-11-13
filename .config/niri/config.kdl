@@ -3,6 +3,10 @@ workspace "2"
 workspace "3"
 workspace "4"
 
+environment {
+    DISPLAY ":0"
+}
+
 input {
     keyboard {
         xkb {
