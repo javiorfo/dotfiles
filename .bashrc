@@ -1,14 +1,14 @@
 # JAVA
-export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-25-openjdk
 export JAVA_WORKSPACE=$HOME/dev/java
-# export JAVA_HOME=/usr/lib/jvm/java-21-graalvm-ee
+# export JAVA_HOME=/usr/lib/jvm/java-25-graalvm-ee
 export M2_HOME=/opt/maven
 
 # GO
 export GOTELEMETRY=off
 
 # PATH
-export PATH=$JAVA_HOME/bin:$M2_HOME/bin:$PATH
+export PATH=$JAVA_HOME/bin:$M2_HOME/bin:$(go env GOPATH)/bin:$PATH
 
 # COLORS
 export LS_COLORS="fi=37:di=01;90:ex=33:ln=37:or=37:mi=00:mh=37\
@@ -50,6 +50,7 @@ alias ga='git add .'
 alias gc='git commit -m $1'
 alias grep='grep --color=auto'
 alias trans='trans -from en -to es $1'
+alias lf='~/.config/lf/start.sh'
 
 # PROMPT
 PS1="\[\033[34m\]\[\033[1;97m\]  \[\e[0;90m\] \w \[\e[1;90m\]\$(git_branch)󰁕\[\e[0;37m\] "
