@@ -31,11 +31,9 @@ cmd open &{{
 	esac
 }}
 
-# ctpv preview
-set previewer ctpv
-set cleaner ctpvclear
-&ctpv -s $id
-&ctpvquit $id
+# preview
+set previewer ~/.config/lf/pv.sh
+set cleaner ~/.config/lf/clean.sh
 
 # Bindings
 map c
